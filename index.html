@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>FlashBits</title>
+
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+  <!-- <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet"> -->
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+  <header>
+    <h1>FlashBits</h1>
+  </header>
+
+  <div id="app" class="container">
+    <button id="delete-set" class="options btn">Delete All</button>
+    <button id="review-set" class="options btn">Review Set</button>
+
+
+    <ul id="cardset" class="row"></ul>
+
+    <div id="new-card">
+      <input name="query" type="text" placeholder="Card Front">
+      <ul class="answers">
+        <li class="answer">
+          <input class="update" name="label" type="text" placeholder="Label" />
+          <input class="update" name="answer" type="text" placeholder="Answer" />
+          <i class="remove-answer icon-remove-sign"></i>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+
+  <script src="vendors/jquery.js"></script>
+  <script src="vendors/underscore.js"></script>
+  <script src="vendors/backbone.js"></script>
+  <script src="vendors/backbone-relational.js"></script>
+  <script src="vendors/backbone.localStorage.js"></script>
+  <script src="vendors/Handlebars.js"></script>
+  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="todos.js"></script>
+
+  <!-- Templates -->
+
+  <script type="text/template" id="card-template">
+    <div class="view">
+      <div class="query">
+        <span>{{query}}</span>
+        <input class="update" name="query" type="text" value="{{query}}" />
+        <a class="edit actions">
+          <i class="icon-pencil"></i>
+        </a>
+        <a class="save actions">
+          <i class="icon-ok-sign"></i>
+        </a>
+        <a class="destroy actions">
+          <i class="icon-remove-sign"></i>
+        </a>
+      </div>
+      <ul class="answers">
+        {{#answers}}
+        <li class="answer">
+          <span>{{label}}:</span>
+          <span>{{answer}}</span>
+          <input class="update" name="label" type="text" value="{{label}}" />
+          <input class="update" name="answer" type="text" value="{{answer}}" />
+          <i class="remove-answer icon-remove-sign"></i>
+        </li>
+        {{/answers}}
+      </ul>
+    </div>
+  </script>
+
+  <script type="text/template" id="bits-template">
+    <li class="answer">
+      <input class="update" name="label" type="text" placeholder="Label" />
+      <input class="update" name="answer" type="text" placeholder="Answer" />
+      <i class="remove-answer icon-remove-sign"></i>
+    </li>
+  </script>
+
+
+  <script type="text/template" id="review-template">
+    REVIEW PAGE
+  </script>
+
+
+  </body>
+</html>
