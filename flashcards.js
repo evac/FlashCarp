@@ -1,15 +1,10 @@
-// An example Backbone application contributed by
-// [Jérôme Gravel-Niquet](http://jgn.me/). This demo uses a simple
-// [LocalStorage adapter](backbone-localstorage.html)
-// to persist Backbone models within your browser.
-
 // Load the application once the DOM is ready, using `jQuery.ready`:
 $(function(){
 
 
   // var Answer = Backbone.Model.extend({
 
-  //   // Default attributes for the todo item.
+  //   // Default attributes for the card item.
   //   defaults: function() {
   //     return {
   //       label: "",
@@ -17,14 +12,14 @@ $(function(){
   //     };
   //   },
 
-  //   // Ensure that each todo created has `query`.
+  //   // Ensure that each card created has `query`.
   //   initialize: function() {
   //     if (!this.get("query")) {
   //       this.set(this.defaults);
   //     }
   //   },
 
-  //   // Toggle the `done` state of this todo item.
+  //   // Toggle the `done` state of this card item.
   //   addAnswer: function(data) {
   //     this.save({answers: this.answers.append({label: data.label, data: data.data})});
   //   },
@@ -32,13 +27,9 @@ $(function(){
   // });
 
 
-  // Card Model
-  // ----------
-
-  // Our basic **Card** model has `query`, `order`, and `done` attributes.
   var Card = Backbone.Model.extend({
 
-    // Default attributes for the todo item.
+    // Default attributes for the card item.
     defaults: function() {
       return {
         query: "",
@@ -48,44 +39,42 @@ $(function(){
       };
     },
 
-    // Ensure that each todo created has `query`.
+    // Ensure that each card created has `query`.
     initialize: function() {
       if (!this.get("query")) {
         this.set(this.defaults);
       }
     },
 
-    // Toggle the `done` state of this todo item.
+    // Toggle the `done` state of this card item.
     addAnswer: function(data) {
       this.save({answers: this.answers.append({label: data.label, answer: data.answer})});
     },
 
-    // Toggle the `done` state of this todo item.
+    // Toggle the `done` state of this card item.
     toggle: function() {
       this.save({done: !this.get("done")});
     }
 
   });
 
-  // Card Collection
-  // ---------------
 
-  // The collection of todos is backed by *localStorage* instead of a remote
+  // The collection of cards is backed by *localStorage* instead of a remote
   // server.
   var CardSet = Backbone.Collection.extend({
 
     // Reference to this collection's model.
     model: Card,
 
-    // Save all of the todo items under the `"cards"` namespace.
+    // Save all of the card items under the `"cards"` namespace.
     localStorage: new Backbone.LocalStorage("cards"),
 
-    // Filter down the list of all todo items that are finished.
+    // Filter down the list of all card items that are finished.
     done: function() {
-      return this.filter(function(todo){ return todo.get('done'); });
+      return this.filter(function(card){ return card.get('done'); });
     },
 
-    // Filter down the list to only todo items that are still not finished.
+    // Filter down the list to only card items that are still not finished.
     remaining: function() {
       return this.without.apply(this, this.done());
     },
@@ -98,8 +87,8 @@ $(function(){
     },
 
     // Cards are sorted by their original insertion order.
-    comparator: function(todo) {
-      return todo.get('order');
+    comparator: function(card) {
+      return card.get('order');
     }
 
   });
@@ -107,10 +96,6 @@ $(function(){
   // Create our global collection of **Cards**.
   var Cards = new CardSet;
 
-  // Card Item View
-  // --------------
-
-  // The DOM element for a todo item...
   var CardView = Backbone.View.extend({
 
     //... is a list tag.
@@ -135,7 +120,7 @@ $(function(){
       this.listenTo(this.model, 'destroy', this.remove);
     },
 
-    // Re-render the querys of the todo item.
+    // Re-render the querys of the card item.
     render: function() {
       this.$el.html(this.template(this.model.toJSON()));
       this.query = this.$('.update[name="query"]');
@@ -170,7 +155,7 @@ $(function(){
       }
     },
 
-    // Close the `"editing"` mode, saving changes to the todo.
+    // Close the `"editing"` mode, saving changes to the card.
     close: function() {
       var query = this.query.val();
       var answerList = this.answers.children();
@@ -207,11 +192,11 @@ $(function(){
 
     // Instead of generating a new element, bind to the existing skeleton of
     // the App already present in the HTML.
-    el: $("#todoapp"),
+    el: $("#app"),
 
     // Delegated events for creating new items, and clearing completed ones.
     events: {
-      "keypress #new-todo":  "createOnEnter",
+      "keypress #new-card":  "createOnEnter",
       "click #delete-set": "clearAll",
       "click .remove-answer": "removeAnswer",
       "keydown .answers .answer:last-child input[name='answer']": "newAnswer",
@@ -219,10 +204,10 @@ $(function(){
 
     // At initialization we bind to the relevant events on the `Cards`
     // collection, when items are added or changed. Kick things off by
-    // loading any preexisting todos that might be saved in *localStorage*.
+    // loading any preexisting cards that might be saved in *localStorage*.
     initialize: function() {
 
-      this.input = this.$("#new-todo");
+      this.input = this.$("#new-card");
       this.query = this.input.children("[name='query']");
       this.answers = this.input.children(".answers");
       this.options = $('.options')
@@ -246,11 +231,11 @@ $(function(){
       }
     },
 
-    // Add a single todo item to the list by creating a view for it, and
+    // Add a single card item to the list by creating a view for it, and
     // appending its element to the `<ul>`.
-    addOne: function(todo) {
-      var view = new CardView({model: todo});
-      this.$("#todo-list").append(view.render().el);
+    addOne: function(card) {
+      var view = new CardView({model: card});
+      this.$("#cardset").append(view.render().el);
     },
 
     // Add all items in the **Cards** collection at once.
@@ -296,9 +281,9 @@ $(function(){
       this.input.find('input').val('');
     },
 
-    // Clear all done todo items, destroying their models.
+    // Clear all done card items, destroying their models.
     clearAll: function() {
-      // Cards.each(function (todo) { todo.destroy(); });
+      // Cards.each(function (card) { card.destroy(); });
       var card;
       while (card = Cards.first()) {
         card.destroy();
