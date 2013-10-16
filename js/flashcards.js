@@ -1,25 +1,34 @@
 // Load the application once the DOM is ready, using `jQuery.ready`:
 $(function() {
 
+
+
+	/* MODELS
+	**********************************************/
+
 	var Card = Backbone.Model.extend({
 
 		// Default attributes for the card item.
 		defaults: function() {
 			return {
 				query: "",
-				done: false,
-				answers: []
+				answers: [],
+				active: false,
 			};
 		},
 
-		// Ensure that each card created has `query`.
 		initialize: function() {
 			this.set(this.defaults);
 		},
 
 		active: function(arg){
-			var toggle = arg | false;
-			this.set("active", toggle);
+			var toggle = this.get("active");
+			if (toggle) {
+				var val = !toggle;
+				this.set("active", val);
+			} else {
+				this.set("active", arg);
+			}
 		},
 
 	});
@@ -32,34 +41,26 @@ $(function() {
 		// Reference to this collection's model.
 		model: Card,
 
-		// Save all of the card items under the `"cards"` namespace.
+		// Save all of the card items under the 'cards' namespace.
 		localStorage: new Backbone.LocalStorage("cards"),
-
-		// Filter down the list of all card items that are finished.
-		done: function() {
-			return this.filter(function(card) {
-				return card.get('done');
-			});
-		},
-
 
 	});
 
-	var PrimaryCard = Backbone.Model.extend({});
-	var primaryCard = new PrimaryCard();
 
 	// Create our global collection of **Cards**.
 	var Cards = new CardSet();
 
 
+	/* CARD VIEW
+	**********************************************/
+
 	var CardView = Backbone.View.extend({
 
-		//... is a list tag.
 		tagName: "li",
 
-		// Cache the template function for a single item.
 		template: Handlebars.compile($('#card-template').html()),
 		qatemplate: Handlebars.compile($('#qa-template').html()),
+		answerTemplate: Handlebars.compile($('#fields-template').html()),
 
 		// The DOM events specific to an item.
 		events: {
@@ -71,18 +72,15 @@ $(function() {
 			"click .main": "hide",
 		},
 
-		// The CardView listens for changes to its model, re-rendering. Since there's
-		// a one-to-one correspondence between a **Card** and a **CardView** in this
-		// app, we set a direct reference on the model for convenience.
+		// listen for changes to model 
 		initialize: function(options) {
 			this.view = options.view;
-			this.done = false;
 			this.listenTo(this.model, 'change', this.render);
 			this.listenTo(this.model, 'change:active', this.active);
 			this.listenTo(this.model, 'destroy', this.remove);
 		},
 
-		// Re-render the querys of the card item.
+		// Re-render the querys of the card item based on editor or review mode.
 		render: function() {
 			var template;
 
@@ -104,8 +102,6 @@ $(function() {
 			this.$el.addClass("editing");
 		},
 
-		answerTemplate: Handlebars.compile($('#fields-template').html()),
-
 		newAnswer: function(e) {
 			if (e.keyCode == 9) {
 				var inputs = this.answerTemplate();
@@ -123,10 +119,7 @@ $(function() {
 				label = $(this).children("[name='label']").val();
 				answer = $(this).children("[name='answer']").val();
 				if (label || answer) {
-					answers.push({
-						label: label,
-						answer: answer
-					});
+					answers.push({label: label, answer: answer});
 				} else {
 					$(this).remove();
 				}
@@ -169,24 +162,26 @@ $(function() {
 		}
 	});
 
-	// The Application
+
+
+	/* EDITOR VIEW 
+	**********************************************/
 
 	var AppEditor = Backbone.View.extend({
 
 		className: "app",
 
+		template: Handlebars.compile($('#app-template').html()),
+		answerTemplate: Handlebars.compile($('#fields-template').html()),
+
 		events: {
 			"keypress #new-card": "createOnEnter",
 			"click #delete-set": "clearAll",
-			"click #demo-set": "demoSet",
 			"click .remove-answer": "removeAnswer",
 			"keydown .answers .answer:last-child [name='answer']": "newAnswer",
 			"click #review-set": "reviewSet",
 		},
 
-		// At initialization we bind to the relevant events on the `Cards`
-		// collection, when items are added or changed. Kick things off by
-		// loading any preexisting cards that might be saved in *localStorage*.
 		initialize: function(options) {
 			$("#app").html(this.el);
 			this.view = options.view;
@@ -194,8 +189,6 @@ $(function() {
 			this.render();
 			this.addAll();
 		},
-
-		template: Handlebars.compile($('#app-template').html()),
 
 		render: function() {
 			this.$el.html(this.template());
@@ -219,12 +212,10 @@ $(function() {
 			Cards.each(this.addOne, this);
 		},
 
-		answerTemplate: Handlebars.compile($('#fields-template').html()),
-
 		newAnswer: function(e) {
 			if (e.keyCode == 9) {
 				var inputs = this.answerTemplate();
-				this.$(".answers").append(inputs);
+				this.$("#new-card .answers").append(inputs);
 				if ($(e.target).closest("#new-card").length) {
 					$("html, body").animate({ scrollTop: $(document).height() }, "slow");
 				}
@@ -252,6 +243,8 @@ $(function() {
 				answer = $(this).children("[name='answer']").val();
 				if (label || answer) {
 					answers.push({label: label, answer: answer});
+				} else {
+					$(this).remove();
 				}
 			});
 
@@ -260,16 +253,8 @@ $(function() {
 			Cards.create({query: query, answers: answers});
 
 			// Reset form
-			this.resetForm();
-		},
-
-		resetForm: function() {
-			this.$card.find("[name='query']").html("");
-			this.$card.find(".answers").html(this.answerTemplate());
-		},
-
-		demoSet: function(){
-			Cards.fetch({url: "js/famouspeople.json"});
+			queryEl.val("")
+			answersEl.html(this.answerTemplate());
 		},
 
 		// Clear all cards
@@ -283,6 +268,8 @@ $(function() {
 	});
 
 
+	/* REVIEW VIEW
+	**********************************************/
 
 	var AppReview = Backbone.View.extend({
 
@@ -300,9 +287,11 @@ $(function() {
 			this.view = options.view;
 
 			$("#app").html(this.el);
+
 			this.render();
 			this.addAll();
 			this.randomCard();
+
 		},
 
 		// Re-render the querys of the card item.
@@ -357,6 +346,10 @@ $(function() {
 
 	});
 
+
+	/* ROUTER
+	**********************************************/
+
 	var app = new(Backbone.Router.extend({
 		routes: {
 			"": "index",
@@ -364,13 +357,7 @@ $(function() {
 		},
 
 		initialize: function(){
-			Cards.fetch({url: "js/famouspeople.json"});
-
-			if (Cards.first()) {
-				this.navigate("review", {trigger: true});
-			} else {
-				this.navigate("", {trigger: true});
-			}
+			Cards.fetch();
 		},
 
 		index: function() {
@@ -388,8 +375,6 @@ $(function() {
 
 	}))();
 
-
-	// Review set on default if there is saved set, else start by creating a set
 
 	Backbone.history.start();
 

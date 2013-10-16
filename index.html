@@ -35,7 +35,6 @@
     <div class="card-editor">
       <nav>
         <button id="delete-set" class="options btn">Delete All</button>
-        <button id="demo-set" class="options btn">Demo Set</button>
         <button id="review-set" class="options btn">Review Set</button>
       </nav>
       <ul id="cardset"></ul>
@@ -74,7 +73,7 @@
         <ul class="answers">
           {{#answers}}
           <li class="answer">
-            <span>{{label}}:</span>
+            <span class="title">{{label}}:</span>
             <span>{{answer}}</span>
             <input class="update" name="label" placeholder="Label" value="{{label}}" />
             <textarea class="update" name="answer" placeholder="Answer">{{answer}}</textarea>
@@ -123,7 +122,7 @@
       <div class="front">
         <div class="titles">
           {{#answers}}
-          <span class="title" data-label={{label}} data-answer={{answer}}>{{label}}</span>
+          <span class="title" data-label="{{label}}" data-answer="{{answer}}">{{label}}</span>
           {{/answers}}
         </div>
       </div>
