@@ -74,7 +74,6 @@ header h1 {
 	margin: 5px;
 	padding: 15px;
 	position: relative;
-	font-size: 24px;
 }
 
 #cardset li.editing {
@@ -127,6 +126,17 @@ header h1 {
 	margin-bottom: 20px;
 	padding-bottom: 20px;
 	border-bottom: 1px solid rgba(0,0,0,.1);
+	font-size: 20px;
+	line-height: 130%;
+}
+
+.card-editor .answer .title {
+	font-weight: bold;
+}
+
+.card-editor .query {
+	font-size: 24px;
+	line-height: 130%;
 }
 
 .card-editor .answer:last-child {
@@ -157,7 +167,7 @@ textarea, input {
 	border: 1px solid rgba(0,0,0,.2);
 	border-radius: 3px;
 	color: #888;
-	line-height: 120%;
+	line-height: 130%;
 	font-size: 20px;
 }
 
