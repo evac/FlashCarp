@@ -9,6 +9,7 @@
   <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/styles.css"/>
+  <script data-main="js/main" src="js/require.js"></script>
 </head>
 
 <body>
@@ -19,14 +20,6 @@
   <div id="app" class="container">
   </div>
 
-  <script src="vendors/jquery.js"></script>
-  <script src="vendors/underscore.js"></script>
-  <script src="vendors/backbone.js"></script>
-  <script src="vendors/backbone.localStorage.js"></script>
-  <script src="vendors/Handlebars.js"></script>
-  <script src="js/flashcards.js"></script>
-
-
 
   <!-- TEMPLATES -->
 
@@ -35,7 +28,7 @@
     <div class="card-editor">
       <nav>
         <button id="delete-set" class="options btn">Delete All</button>
-        <button id="review-set" class="options btn">Review Set</button>
+        <button id="test-set" class="options btn">Review Set</button>
       </nav>
       <ul id="cardset"></ul>
 
@@ -96,7 +89,7 @@
 
 
   <!-- REVIEW -->
-  <script type="text/template" id="review-template">
+  <script type="text/template" id="test-template">
     <nav>
       <button id="edit-set" class="options btn">Edit Set</button>
     </nav>
@@ -136,6 +129,15 @@
     </div>
   </script>
 
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+    ga('create', 'UA-45110454-1', 'evactivate.com');
+    ga('send', 'pageview');
+
+  </script>
   </body>
 </html>
