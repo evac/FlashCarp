@@ -5,7 +5,8 @@ require.config({
 		backbone: 'libs/backbone',
 		localstorage: 'libs/backbone.localStorage',
 		handlebars: 'libs/handlebars',
-		templates: '../templates'
+		templates: '../templates',
+		bootstrap: 'libs/bootstrap'
 	},
 
 	shim: {
@@ -22,6 +23,9 @@ require.config({
 		},
 		"handlebars": {
 			exports: "Handlebars"
+		},
+		"bootstrap": {
+			deps: ["jquery"]
 		}
 	}
 });
