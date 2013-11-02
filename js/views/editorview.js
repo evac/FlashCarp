@@ -1,4 +1,4 @@
-define(['require', 'router', 'views/cardview', 'cards'], function(require, Router, CardView, Cards){
+define(['require', 'router', 'views/cardview', 'bootstrap'], function(require, Router, CardView){
 	"use strict";
 
 	var $ = require('jquery'),
@@ -22,7 +22,7 @@ define(['require', 'router', 'views/cardview', 'cards'], function(require, Route
 		initialize: function(options) {
 			$("#app").html(this.el);
 			this.view = options.view;
-			this.listenTo(Cards, 'add', this.addOne);
+			this.listenTo(this.collection, 'add', this.addOne);
 			this.render();
 			this.addAll();
 		},
@@ -44,9 +44,9 @@ define(['require', 'router', 'views/cardview', 'cards'], function(require, Route
 			this.$("#cardset").append(view.render().el);
 		},
 
-		// Add all items in the **Cards** collection at once.
+		// Add all items in the collection at once.
 		addAll: function() {
-			Cards.each(this.addOne, this);
+			this.collection.each(this.addOne, this);
 		},
 
 		newAnswer: function(e) {
@@ -87,7 +87,7 @@ define(['require', 'router', 'views/cardview', 'cards'], function(require, Route
 
 			if (!query || !answers) return;
 
-			Cards.create({query: query, answers: answers});
+			this.collection.create({query: query, answers: answers});
 
 			// Reset form
 			queryEl.val("");
@@ -97,7 +97,7 @@ define(['require', 'router', 'views/cardview', 'cards'], function(require, Route
 		// Clear all cards
 		clearAll: function() {
 			var card;
-			while (card = Cards.first()) {
+			while (card = this.collection.first()) {
 				card.destroy();
 			}
 		},

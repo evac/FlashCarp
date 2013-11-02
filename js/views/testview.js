@@ -1,4 +1,4 @@
-define(['require', 'router', 'views/cardview', 'cards'], function(require, Router, CardView, Cards){
+define(['require', 'router', 'views/cardview', 'bootstrap'], function(require, Router, CardView){
 	"use strict";
 
 	var $ = require('jquery'),
@@ -15,7 +15,7 @@ define(['require', 'router', 'views/cardview', 'cards'], function(require, Route
 		events: {
 			"click #edit-set": "editSet",
 			"click .next": "randomCard",
-			"click .restart": "restart"
+			"click .restart": "restart",
 		},
 
 		initialize: function(options) {
@@ -32,7 +32,7 @@ define(['require', 'router', 'views/cardview', 'cards'], function(require, Route
 		// Re-render the querys of the card item.
 		render: function() {
 			// create array of card indexes
-			this.remaining = Array(Cards.length).join().split(',').map(function(a){return this.i++;},{i:0});
+			this.remaining = Array(this.collection.length).join().split(',').map(function(a){return this.i++;},{i:0});
 
 			this.$el.html(this.template());
 			return this;
@@ -44,18 +44,18 @@ define(['require', 'router', 'views/cardview', 'cards'], function(require, Route
 			this.$("#cardreview").append(view.render().el);
 		},
 
-		// Add all items in the **Cards** collection at once.
+		// Add all items in the collection at once.
 		addAll: function() {
-			Cards.each(this.addOne, this);
+			this.collection.each(this.addOne, this);
 		},
 
 		// select random card from remaining cards
 		randomCard: function(){
 			if (this.primary) {this.primary.active(false);}
-			if (this.remaining.length && Cards.length) {
+			if (this.remaining.length && this.collection.length) {
 				var randint = _.random(this.remaining.length - 1);
 				var index = this.remaining[randint];
-				var card = Cards.models[index];
+				var card = this.collection.models[index];
 				this.remaining.splice(randint, 1);
 				card.active(true);
 				this.primary = card;
@@ -66,7 +66,7 @@ define(['require', 'router', 'views/cardview', 'cards'], function(require, Route
 
 		restart: function(){
 			this.$('.end .card').hide();
-			this.remaining = Array(Cards.length).join().split(',').map(function(a){return this.i++;},{i:0});
+			this.remaining = Array(this.collection.length).join().split(',').map(function(a){return this.i++;},{i:0});
 			this.randomCard();
 		},
 
@@ -77,6 +77,7 @@ define(['require', 'router', 'views/cardview', 'cards'], function(require, Route
 		editSet: function() {
 			Backbone.history.navigate("", {trigger: true});
 		},
+
 	});
 
 	return TestView;

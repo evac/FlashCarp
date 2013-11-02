@@ -1,9 +1,8 @@
-define(['require', 'views/EditorView', 'views/TestView'], function(require, EditorView, TestView){
+define(['require', 'views/EditorView', 'views/TestView', 'collections/cards'], function(require, EditorView, TestView, CardSet){
 	"use strict";
 
 	var $ = require('jquery'),
-			Backbone = require('backbone'),
-			Cards = require('cards');
+			Backbone = require('backbone');
 
 	var Router = Backbone.Router.extend({
 		routes: {
@@ -12,15 +11,16 @@ define(['require', 'views/EditorView', 'views/TestView'], function(require, Edit
 		},
 
 		initialize: function(){
-			Cards.fetch();
+			this.Cards = new CardSet();
+			this.Cards.fetch();
 		},
 
 		index: function() {
-			this.loadView(new EditorView({view: "index"}));
+			this.loadView(new EditorView({view: "index", collection: this.Cards}));
 		},
 
 		test: function() {
-			this.loadView(new TestView({view: "test"}));
+			this.loadView(new TestView({view: "test", collection: this.Cards}));
 		},
 
 		loadView: function(view){
