@@ -11,8 +11,26 @@ define(function(require){
 	var CardSet = Backbone.Collection.extend({
 		model: Card,
 
+		demoURL: "https://s3.amazonaws.com/evachen/demo-sets.json",
+
 		// Save all of the card items under the 'cards' namespace.
 		localStorage: new Backbone.LocalStorage("cards"),
+
+		initialize: function(){
+			this.fetchDemoData();
+		},
+
+		fetchDemoData: function(set){
+			var self = this;
+
+			$.getJSON(this.demoURL).then(function (data){
+				self.demosets = data;
+			});
+		},
+
+		fetchDemoSet: function(set){
+			this.reset(this.demosets[set]);
+		}
 	});
 
 	return CardSet;

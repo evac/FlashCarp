@@ -27,15 +27,26 @@
   <script type="text/template" id="app-template">
     <div class="card-editor">
       <nav>
-        <button id="delete-set" class="options btn">Delete All</button>
-        <button id="test-set" class="options btn">Review Set</button>
+        <button id="delete-set" class="options btn">Clear</button>
+        <button id="test-set" class="options btn">Review</button>
+
+        <div class="btn-group">
+          <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">Demo Sets <span class="caret"></button> 
+          <ul class="dropdown-menu" role="menu">
+            <li role="presentation" class="demo-set" data-set="sorting">Sorting Time Complexities</li>
+            <li role="presentation" class="demo-set" data-set="scientists">Famous Scientists</li>
+            <li role="presentation" class="demo-set" data-set="periodictable">Periodic Table</li>
+          </ul>
+        </div>
       </nav>
       <ul id="cardset"></ul>
 
       <div id="new-card">
-        <div class="col-md-6 wrapper">
-          <h3><i class="icon-plus"></i> Add New Card</h3>
-          <textarea name="query" placeholder="Card Front"></textarea>
+        <div class="col-md-6">
+          <div class="wrapper">
+            <h3><i class="icon-plus"></i> Add New Card</h3>
+            <textarea name="query" placeholder="Card Front"></textarea>
+          </div>
         </div>
         <div class="col-md-6">
           <ul class="answers wrapper">
@@ -91,7 +102,15 @@
   <!-- REVIEW -->
   <script type="text/template" id="test-template">
     <nav>
-      <button id="edit-set" class="options btn">Edit Set</button>
+      <button id="edit-set" class="options btn">Edit</button>
+      <div class="btn-group">
+        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">Demo Sets <span class="caret"></button> 
+        <ul class="dropdown-menu" role="menu">
+          <li role="presentation" class="demo-set" data-set="sorting">Time Complexities</li>
+          <li role="presentation" class="demo-set" data-set="scientists">Famous Scientists</li>
+          <li role="presentation" class="demo-set" data-set="periodictable">Periodic Table</li>
+        </ul>
+      </div>
     </nav>
     <div class="row">
       <ul id="cardreview" class="col-md-8 col-md-offset-2">

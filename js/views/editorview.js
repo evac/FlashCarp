@@ -17,19 +17,24 @@ define(['require', 'router', 'views/cardview', 'bootstrap'], function(require, R
 			"click .remove-answer": "removeAnswer",
 			"keydown .answers .answer:last-child [name='answer']": "newAnswer",
 			"click #test-set": "testSet",
+			"click .demo-set": "demoSet"
 		},
 
 		initialize: function(options) {
 			$("#app").html(this.el);
 			this.view = options.view;
 			this.listenTo(this.collection, 'add', this.addOne);
+			this.listenTo(this.collection, 'reset', this.render);
 			this.render();
-			this.addAll();
 		},
 
 		render: function() {
+			// render template
 			this.$el.html(this.editorTemplate());
 			this.$card = $("#new-card");
+
+			// populate with cards
+			this.addAll();
 			return this;
 		},
 
@@ -58,7 +63,6 @@ define(['require', 'router', 'views/cardview', 'bootstrap'], function(require, R
 				}
 			}
 		},
-
 
 		removeAnswer: function(e) {
 			$(e.target).parent().remove();
@@ -101,6 +105,11 @@ define(['require', 'router', 'views/cardview', 'bootstrap'], function(require, R
 				card.destroy();
 			}
 		},
+
+		demoSet: function(e) {
+			var set = $(e.target).data('set');
+			this.collection.fetchDemoSet(set);
+		}
 
 	});
 

@@ -16,6 +16,7 @@ define(['require', 'router', 'views/cardview', 'bootstrap'], function(require, R
 			"click #edit-set": "editSet",
 			"click .next": "randomCard",
 			"click .restart": "restart",
+			"click .demo-set": "demoSet"
 		},
 
 		initialize: function(options) {
@@ -77,6 +78,11 @@ define(['require', 'router', 'views/cardview', 'bootstrap'], function(require, R
 		editSet: function() {
 			Backbone.history.navigate("", {trigger: true});
 		},
+
+		demoSet: function(e) {
+			var set = $(e.target).data('set');
+			this.collection.fetchDemoSet(set);
+		}
 
 	});
 
