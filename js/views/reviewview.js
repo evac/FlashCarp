@@ -6,11 +6,11 @@ define(['require', 'router', 'views/cardview', 'bootstrap'], function(require, R
 			Backbone = require('backbone'),
 			Handlebars = require('handlebars');
 
-	var TestView = Backbone.View.extend({
+	var ReviewView = Backbone.View.extend({
 
-		className: "test",
+		className: "review",
 
-		template: Handlebars.compile($('#test-template').html()),
+		template: Handlebars.compile($('#review-template').html()),
 
 		events: {
 			"click #edit-set": "editSet",
@@ -23,19 +23,18 @@ define(['require', 'router', 'views/cardview', 'bootstrap'], function(require, R
 			this.view = options.view;
 
 			$("#app").html(this.el);
-
+			this.listenTo(this.collection, "reset", this.render);
 			this.render();
-			this.addAll();
 			this.randomCard();
-
 		},
 
 		// Re-render the querys of the card item.
 		render: function() {
 			// create array of card indexes
 			this.remaining = Array(this.collection.length).join().split(',').map(function(a){return this.i++;},{i:0});
-
 			this.$el.html(this.template());
+			this.addAll();
+
 			return this;
 		},
 
@@ -52,7 +51,9 @@ define(['require', 'router', 'views/cardview', 'bootstrap'], function(require, R
 
 		// select random card from remaining cards
 		randomCard: function(){
-			if (this.primary) {this.primary.active(false);}
+			if (this.primary) {
+				this.primary.active(false);
+			}
 			if (this.remaining.length && this.collection.length) {
 				var randint = _.random(this.remaining.length - 1);
 				var index = this.remaining[randint];
@@ -82,9 +83,10 @@ define(['require', 'router', 'views/cardview', 'bootstrap'], function(require, R
 		demoSet: function(e) {
 			var set = $(e.target).data('set');
 			this.collection.fetchDemoSet(set);
+			this.randomCard();
 		}
 
 	});
 
-	return TestView;
+	return ReviewView;
 });
