@@ -214,1299 +214,1299 @@
 		{
 			"query": "Hydrogen",
 			"answers": [
-				{"label": "symbol", "answer" : "H"},
-				{"label": "atomic_number", "answer" : 1},
-				{"label": "atomic_weight", "answer" : 1.00794},
-				{"label": "density g/cm", "answer" : "0.0708 (@ -253°C)"},
-				{"label": "melting_point K", "answer" : 14.01},
-				{"label": "boiling_point K", "answer" : 20.28}
+				{"label": "Symbol", "answer" : "H"},
+				{"label": "Atomic Number", "answer" : 1},
+				{"label": "Atomic Weight", "answer" : 1.00794},
+				{"label": "Density g/cm", "answer" : "0.0708 (@ -253°C)"},
+				{"label": "Melting Point K", "answer" : 14.01},
+				{"label": "Boiling Point K", "answer" : 20.28}
 			]
 		},
 		{
 			"query": "Helium",
 			"answers": [
-				{"label": "symbol", "answer" : "He"},
-				{"label": "atomic_number", "answer" : 2},
-				{"label": "atomic_weight", "answer" : 4.002602},
-				{"label": "density g/cm", "answer" : "0.147 (@ -270°C)"},
-				{"label": "melting_point K", "answer" : 0.95},
-				{"label": "boiling_point K", "answer" : 4.216}
+				{"label": "Symbol", "answer" : "He"},
+				{"label": "Atomic Number", "answer" : 2},
+				{"label": "Atomic Weight", "answer" : 4.002602},
+				{"label": "Density g/cm", "answer" : "0.147 (@ -270°C)"},
+				{"label": "Melting Point K", "answer" : 0.95},
+				{"label": "Boiling Point K", "answer" : 4.216}
 			]
 		},
 		{
 			"query": "Lithium",
 			"answers": [
-				{"label": "symbol", "answer" : "Li"},
-				{"label": "atomic_number", "answer" : 3},
-				{"label": "atomic_weight", "answer" : 6.941},
-				{"label": "density g/cm", "answer" : "0.534 g/cm"},
-				{"label": "melting_point K", "answer" : 553.69},
-				{"label": "boiling_point K", "answer" : 1118.15}
+				{"label": "Symbol", "answer" : "Li"},
+				{"label": "Atomic Number", "answer" : 3},
+				{"label": "Atomic Weight", "answer" : 6.941},
+				{"label": "Density g/cm", "answer" : "0.534 g/cm"},
+				{"label": "Melting Point K", "answer" : 553.69},
+				{"label": "Boiling Point K", "answer" : 1118.15}
 			]
 		},
 		{
 			"query": "Beryllium",
 			"answers": [
-				{"label": "symbol", "answer" : "Be"},
-				{"label": "atomic_number", "answer" : 4},
-				{"label": "atomic_weight", "answer" : 9.01218},
-				{"label": "density g/cm", "answer" : "1.848 g/cm"},
-				{"label": "melting_point K", "answer" : 1551},
-				{"label": "boiling_point K", "answer" : 3243}
+				{"label": "Symbol", "answer" : "Be"},
+				{"label": "Atomic Number", "answer" : 4},
+				{"label": "Atomic Weight", "answer" : 9.01218},
+				{"label": "Density g/cm", "answer" : "1.848 g/cm"},
+				{"label": "Melting Point K", "answer" : 1551},
+				{"label": "Boiling Point K", "answer" : 3243}
 			]
 		},
 		{
 			"query": "Boron",
 			"answers": [
-				{"label": "symbol", "answer" : "B"},
-				{"label": "atomic_number", "answer" : 5},
-				{"label": "atomic_weight", "answer" : 10.811},
-				{"label": "density g/cm", "answer" : "2.34 g/cm"},
-				{"label": "melting_point K", "answer" : 2573},
-				{"label": "boiling_point K", "answer" : 3931}
+				{"label": "Symbol", "answer" : "B"},
+				{"label": "Atomic Number", "answer" : 5},
+				{"label": "Atomic Weight", "answer" : 10.811},
+				{"label": "Density g/cm", "answer" : "2.34 g/cm"},
+				{"label": "Melting Point K", "answer" : 2573},
+				{"label": "Boiling Point K", "answer" : 3931}
 			]
 		},
 		{
 			"query": "Carbon",
 			"answers": [
-				{"label": "symbol", "answer" : "C"},
-				{"label": "atomic_number", "answer" : 6},
-				{"label": "atomic_weight", "answer" : 12.011},
-				{"label": "density g/cm", "answer" : "2.25 (graphite)"},
-				{"label": "melting_point K", "answer" : 3820},
-				{"label": "boiling_point K", "answer" : 5100}
+				{"label": "Symbol", "answer" : "C"},
+				{"label": "Atomic Number", "answer" : 6},
+				{"label": "Atomic Weight", "answer" : 12.011},
+				{"label": "Density g/cm", "answer" : "2.25 (graphite)"},
+				{"label": "Melting Point K", "answer" : 3820},
+				{"label": "Boiling Point K", "answer" : 5100}
 			]
 		},
 		{
 			"query": "Nitrogen",
 			"answers": [
-				{"label": "symbol", "answer" : "N"},
-				{"label": "atomic_number", "answer" : 7},
-				{"label": "atomic_weight", "answer" : 14.00674},
-				{"label": "density g/cm", "answer" : "0.808 (@ -195.8°C)"},
-				{"label": "melting_point K", "answer" : 63.29},
-				{"label": "boiling_point K", "answer" : 77.4}
+				{"label": "Symbol", "answer" : "N"},
+				{"label": "Atomic Number", "answer" : 7},
+				{"label": "Atomic Weight", "answer" : 14.00674},
+				{"label": "Density g/cm", "answer" : "0.808 (@ -195.8°C)"},
+				{"label": "Melting Point K", "answer" : 63.29},
+				{"label": "Boiling Point K", "answer" : 77.4}
 			]
 		},
 		{
 			"query": "Oxygen",
 			"answers": [
-				{"label": "symbol", "answer" : "O"},
-				{"label": "atomic_number", "answer" : 8},
-				{"label": "atomic_weight", "answer" : 15.9994},
-				{"label": "density g/cm", "answer" : "1.149 (@ -183°C)"},
-				{"label": "melting_point K", "answer" : 54.8},
-				{"label": "boiling_point K", "answer" : 90.19}
+				{"label": "Symbol", "answer" : "O"},
+				{"label": "Atomic Number", "answer" : 8},
+				{"label": "Atomic Weight", "answer" : 15.9994},
+				{"label": "Density g/cm", "answer" : "1.149 (@ -183°C)"},
+				{"label": "Melting Point K", "answer" : 54.8},
+				{"label": "Boiling Point K", "answer" : 90.19}
 			]
 		},
 		{
 			"query": "Fluorine",
 			"answers": [
-				{"label": "symbol", "answer" : "F"},
-				{"label": "atomic_number", "answer" : 9},
-				{"label": "atomic_weight", "answer" : 18.998403},
-				{"label": "density g/cm", "answer" : "1.108 (@ -189°C)"},
-				{"label": "melting_point K", "answer" : 53.53},
-				{"label": "boiling_point K", "answer" : 85.01}
+				{"label": "Symbol", "answer" : "F"},
+				{"label": "Atomic Number", "answer" : 9},
+				{"label": "Atomic Weight", "answer" : 18.998403},
+				{"label": "Density g/cm", "answer" : "1.108 (@ -189°C)"},
+				{"label": "Melting Point K", "answer" : 53.53},
+				{"label": "Boiling Point K", "answer" : 85.01}
 			]
 		},
 		{
 			"query": "Neon",
 			"answers": [
-				{"label": "symbol", "answer" : "Ne"},
-				{"label": "atomic_number", "answer" : 10},
-				{"label": "atomic_weight", "answer" : 20.1797},
-				{"label": "density g/cm", "answer" : "1.204 (@ -246°C)"},
-				{"label": "melting_point K", "answer" : 48},
-				{"label": "boiling_point K", "answer" : 27.1}
+				{"label": "Symbol", "answer" : "Ne"},
+				{"label": "Atomic Number", "answer" : 10},
+				{"label": "Atomic Weight", "answer" : 20.1797},
+				{"label": "Density g/cm", "answer" : "1.204 (@ -246°C)"},
+				{"label": "Melting Point K", "answer" : 48},
+				{"label": "Boiling Point K", "answer" : 27.1}
 			]
 		},
 		{
 			"query": "Sodium",
 			"answers": [
-				{"label": "symbol", "answer" : "Na"},
-				{"label": "atomic_number", "answer" : 11},
-				{"label": "atomic_weight", "answer" : 22.989768},
-				{"label": "density g/cm", "answer" : "0.971 g/cm"},
-				{"label": "melting_point K", "answer" : 370.96},
-				{"label": "boiling_point K", "answer" : 1156.1}
+				{"label": "Symbol", "answer" : "Na"},
+				{"label": "Atomic Number", "answer" : 11},
+				{"label": "Atomic Weight", "answer" : 22.989768},
+				{"label": "Density g/cm", "answer" : "0.971 g/cm"},
+				{"label": "Melting Point K", "answer" : 370.96},
+				{"label": "Boiling Point K", "answer" : 1156.1}
 			]
 		},
 		{
 			"query": "Magnesium",
 			"answers": [
-				{"label": "symbol", "answer" : "Mg"},
-				{"label": "atomic_number", "answer" : 12},
-				{"label": "atomic_weight", "answer" : 24.305},
-				{"label": "density g/cm", "answer" : "1.738 g/cm"},
-				{"label": "melting_point K", "answer" : 922},
-				{"label": "boiling_point K", "answer" : 1363}
+				{"label": "Symbol", "answer" : "Mg"},
+				{"label": "Atomic Number", "answer" : 12},
+				{"label": "Atomic Weight", "answer" : 24.305},
+				{"label": "Density g/cm", "answer" : "1.738 g/cm"},
+				{"label": "Melting Point K", "answer" : 922},
+				{"label": "Boiling Point K", "answer" : 1363}
 			]
 		},
 		{
 			"query": "Aluminum",
 			"answers": [
-				{"label": "symbol", "answer" : "Al"},
-				{"label": "atomic_number", "answer" : 13},
-				{"label": "atomic_weight", "answer" : 26.981539},
-				{"label": "density g/cm", "answer" : "2.6989 g/cm"},
-				{"label": "melting_point K", "answer" : 933.5},
-				{"label": "boiling_point K", "answer" : 2740}
+				{"label": "Symbol", "answer" : "Al"},
+				{"label": "Atomic Number", "answer" : 13},
+				{"label": "Atomic Weight", "answer" : 26.981539},
+				{"label": "Density g/cm", "answer" : "2.6989 g/cm"},
+				{"label": "Melting Point K", "answer" : 933.5},
+				{"label": "Boiling Point K", "answer" : 2740}
 			]
 		},
 		{
 			"query": "Silicon",
 			"answers": [
-				{"label": "symbol", "answer" : "Si"},
-				{"label": "atomic_number", "answer" : 14},
-				{"label": "atomic_weight", "answer" : 28.0855},
-				{"label": "density g/cm", "answer" : "2.33 g/cm"},
-				{"label": "melting_point K", "answer" : 1683},
-				{"label": "boiling_point K", "answer" : 2628}
+				{"label": "Symbol", "answer" : "Si"},
+				{"label": "Atomic Number", "answer" : 14},
+				{"label": "Atomic Weight", "answer" : 28.0855},
+				{"label": "Density g/cm", "answer" : "2.33 g/cm"},
+				{"label": "Melting Point K", "answer" : 1683},
+				{"label": "Boiling Point K", "answer" : 2628}
 			]
 		},
 		{
 			"query": "Phosphorus",
 			"answers": [
-				{"label": "symbol", "answer" : "P"},
-				{"label": "atomic_number", "answer" : 15},
-				{"label": "atomic_weight", "answer" : 30.973762},
-				{"label": "density g/cm", "answer" : "1.82 (white phosphorus)"},
-				{"label": "melting_point K", "answer" : 317.3},
-				{"label": "boiling_point K", "answer" : 553}
+				{"label": "Symbol", "answer" : "P"},
+				{"label": "Atomic Number", "answer" : 15},
+				{"label": "Atomic Weight", "answer" : 30.973762},
+				{"label": "Density g/cm", "answer" : "1.82 (white phosphorus)"},
+				{"label": "Melting Point K", "answer" : 317.3},
+				{"label": "Boiling Point K", "answer" : 553}
 			]
 		},
 		{
 			"query": "Sulfur",
 			"answers": [
-				{"label": "symbol", "answer" : "S"},
-				{"label": "atomic_number", "answer" : 16},
-				{"label": "atomic_weight", "answer" : 32.066},
-				{"label": "density g/cm", "answer" : "2.070 g/cm"},
-				{"label": "melting_point K", "answer" : 386},
-				{"label": "boiling_point K", "answer" : 717.824}
+				{"label": "Symbol", "answer" : "S"},
+				{"label": "Atomic Number", "answer" : 16},
+				{"label": "Atomic Weight", "answer" : 32.066},
+				{"label": "Density g/cm", "answer" : "2.070 g/cm"},
+				{"label": "Melting Point K", "answer" : 386},
+				{"label": "Boiling Point K", "answer" : 717.824}
 			]
 		},
 		{
 			"query": "Chlorine",
 			"answers": [
-				{"label": "symbol", "answer" : "Cl"},
-				{"label": "atomic_number", "answer" : 17},
-				{"label": "atomic_weight", "answer" : 35.4527},
-				{"label": "density g/cm", "answer" : "1.56 (@ -33.6°C)"},
-				{"label": "melting_point K", "answer" : 172.2},
-				{"label": "boiling_point K", "answer" : 238.6}
+				{"label": "Symbol", "answer" : "Cl"},
+				{"label": "Atomic Number", "answer" : 17},
+				{"label": "Atomic Weight", "answer" : 35.4527},
+				{"label": "Density g/cm", "answer" : "1.56 (@ -33.6°C)"},
+				{"label": "Melting Point K", "answer" : 172.2},
+				{"label": "Boiling Point K", "answer" : 238.6}
 			]
 		},
 		{
 			"query": "Argon",
 			"answers": [
-				{"label": "symbol", "answer" : "Ar"},
-				{"label": "atomic_number", "answer" : 18},
-				{"label": "atomic_weight", "answer" : 39.948},
-				{"label": "density g/cm", "answer" : "1.40 (@ -186°C)"},
-				{"label": "melting_point K", "answer" : 83.8},
-				{"label": "boiling_point K", "answer" : 87.3}
+				{"label": "Symbol", "answer" : "Ar"},
+				{"label": "Atomic Number", "answer" : 18},
+				{"label": "Atomic Weight", "answer" : 39.948},
+				{"label": "Density g/cm", "answer" : "1.40 (@ -186°C)"},
+				{"label": "Melting Point K", "answer" : 83.8},
+				{"label": "Boiling Point K", "answer" : 87.3}
 			]
 		},
 		{
 			"query": "Potassium",
 			"answers": [
-				{"label": "symbol", "answer" : "K"},
-				{"label": "atomic_number", "answer" : 19},
-				{"label": "atomic_weight", "answer" : 39.0983},
-				{"label": "density g/cm", "answer" : "0.856 g/cm"},
-				{"label": "melting_point K", "answer" : 336.8},
-				{"label": "boiling_point K", "answer" : 1047}
+				{"label": "Symbol", "answer" : "K"},
+				{"label": "Atomic Number", "answer" : 19},
+				{"label": "Atomic Weight", "answer" : 39.0983},
+				{"label": "Density g/cm", "answer" : "0.856 g/cm"},
+				{"label": "Melting Point K", "answer" : 336.8},
+				{"label": "Boiling Point K", "answer" : 1047}
 			]
 		},
 		{
 			"query": "Calcium",
 			"answers": [
-				{"label": "symbol", "answer" : "Ca"},
-				{"label": "atomic_number", "answer" : 20},
-				{"label": "atomic_weight", "answer" : 40.078},
-				{"label": "density g/cm", "answer" : "1.55 g/cm"},
-				{"label": "melting_point K", "answer" : 1112},
-				{"label": "boiling_point K", "answer" : 1757}
+				{"label": "Symbol", "answer" : "Ca"},
+				{"label": "Atomic Number", "answer" : 20},
+				{"label": "Atomic Weight", "answer" : 40.078},
+				{"label": "Density g/cm", "answer" : "1.55 g/cm"},
+				{"label": "Melting Point K", "answer" : 1112},
+				{"label": "Boiling Point K", "answer" : 1757}
 			]
 		},
 		{
 			"query": "Scandium",
 			"answers": [
-				{"label": "symbol", "answer" : "Sc"},
-				{"label": "atomic_number", "answer" : 21},
-				{"label": "atomic_weight", "answer" : 44.95591},
-				{"label": "density g/cm", "answer" : "2.99 g/cm"},
-				{"label": "melting_point K", "answer" : 1814},
-				{"label": "boiling_point K", "answer" : 3104}
+				{"label": "Symbol", "answer" : "Sc"},
+				{"label": "Atomic Number", "answer" : 21},
+				{"label": "Atomic Weight", "answer" : 44.95591},
+				{"label": "Density g/cm", "answer" : "2.99 g/cm"},
+				{"label": "Melting Point K", "answer" : 1814},
+				{"label": "Boiling Point K", "answer" : 3104}
 			]
 		},
 		{
 			"query": "Titanium",
 			"answers": [
-				{"label": "symbol", "answer" : "Ti"},
-				{"label": "atomic_number", "answer" : 22},
-				{"label": "atomic_weight", "answer" : 47.88},
-				{"label": "density g/cm", "answer" : "4.54 g/cm"},
-				{"label": "melting_point K", "answer" : 1933},
-				{"label": "boiling_point K", "answer" : 3560}
+				{"label": "Symbol", "answer" : "Ti"},
+				{"label": "Atomic Number", "answer" : 22},
+				{"label": "Atomic Weight", "answer" : 47.88},
+				{"label": "Density g/cm", "answer" : "4.54 g/cm"},
+				{"label": "Melting Point K", "answer" : 1933},
+				{"label": "Boiling Point K", "answer" : 3560}
 			]
 		},
 		{
 			"query": "Vanadium",
 			"answers": [
-				{"label": "symbol", "answer" : "V"},
-				{"label": "atomic_number", "answer" : 23},
-				{"label": "atomic_weight", "answer" : 50.9415},
-				{"label": "density g/cm", "answer" : "6.11 g/cm"},
-				{"label": "melting_point K", "answer" : 2160},
-				{"label": "boiling_point K", "answer" : 3650}
+				{"label": "Symbol", "answer" : "V"},
+				{"label": "Atomic Number", "answer" : 23},
+				{"label": "Atomic Weight", "answer" : 50.9415},
+				{"label": "Density g/cm", "answer" : "6.11 g/cm"},
+				{"label": "Melting Point K", "answer" : 2160},
+				{"label": "Boiling Point K", "answer" : 3650}
 			]
 		},
 		{
 			"query": "Chromium",
 			"answers": [
-				{"label": "symbol", "answer" : "Cr"},
-				{"label": "atomic_number", "answer" : 24},
-				{"label": "atomic_weight", "answer" : 51.9961},
-				{"label": "density g/cm", "answer" : "7.18 g/cm"},
-				{"label": "melting_point K", "answer" : 2130},
-				{"label": "boiling_point K", "answer" : 2945}
+				{"label": "Symbol", "answer" : "Cr"},
+				{"label": "Atomic Number", "answer" : 24},
+				{"label": "Atomic Weight", "answer" : 51.9961},
+				{"label": "Density g/cm", "answer" : "7.18 g/cm"},
+				{"label": "Melting Point K", "answer" : 2130},
+				{"label": "Boiling Point K", "answer" : 2945}
 			]
 		},
 		{
 			"query": "Manganese",
 			"answers": [
-				{"label": "symbol", "answer" : "Mn"},
-				{"label": "atomic_number", "answer" : 25},
-				{"label": "atomic_weight", "answer" : 54.93805},
-				{"label": "density g/cm", "answer" : "7.21 g/cm"},
-				{"label": "melting_point K", "answer" : 1517},
-				{"label": "boiling_point K", "answer" : 2235}
+				{"label": "Symbol", "answer" : "Mn"},
+				{"label": "Atomic Number", "answer" : 25},
+				{"label": "Atomic Weight", "answer" : 54.93805},
+				{"label": "Density g/cm", "answer" : "7.21 g/cm"},
+				{"label": "Melting Point K", "answer" : 1517},
+				{"label": "Boiling Point K", "answer" : 2235}
 			]
 		},
 		{
 			"query": "Iron",
 			"answers": [
-				{"label": "symbol", "answer" : "Fe"},
-				{"label": "atomic_number", "answer" : 26},
-				{"label": "atomic_weight", "answer" : 55.847},
-				{"label": "density g/cm", "answer" : "7.874 g/cm"},
-				{"label": "melting_point K", "answer" : 1808},
-				{"label": "boiling_point K", "answer" : 3023}
+				{"label": "Symbol", "answer" : "Fe"},
+				{"label": "Atomic Number", "answer" : 26},
+				{"label": "Atomic Weight", "answer" : 55.847},
+				{"label": "Density g/cm", "answer" : "7.874 g/cm"},
+				{"label": "Melting Point K", "answer" : 1808},
+				{"label": "Boiling Point K", "answer" : 3023}
 			]
 		},
 		{
 			"query": "Cobalt",
 			"answers": [
-				{"label": "symbol", "answer" : "Co"},
-				{"label": "atomic_number", "answer" : 27},
-				{"label": "atomic_weight", "answer" : 58.9332},
-				{"label": "density g/cm", "answer" : "8.9 g/cm"},
-				{"label": "melting_point K", "answer" : 1768},
-				{"label": "boiling_point K", "answer" : 3143}
+				{"label": "Symbol", "answer" : "Co"},
+				{"label": "Atomic Number", "answer" : 27},
+				{"label": "Atomic Weight", "answer" : 58.9332},
+				{"label": "Density g/cm", "answer" : "8.9 g/cm"},
+				{"label": "Melting Point K", "answer" : 1768},
+				{"label": "Boiling Point K", "answer" : 3143}
 			]
 		},
 		{
 			"query": "Nickel",
 			"answers": [
-				{"label": "symbol", "answer" : "Ni"},
-				{"label": "atomic_number", "answer" : 28},
-				{"label": "atomic_weight", "answer" : 58.6934},
-				{"label": "density g/cm", "answer" : "8.902 g/cm"},
-				{"label": "melting_point K", "answer" : 1726},
-				{"label": "boiling_point K", "answer" : 3005}
+				{"label": "Symbol", "answer" : "Ni"},
+				{"label": "Atomic Number", "answer" : 28},
+				{"label": "Atomic Weight", "answer" : 58.6934},
+				{"label": "Density g/cm", "answer" : "8.902 g/cm"},
+				{"label": "Melting Point K", "answer" : 1726},
+				{"label": "Boiling Point K", "answer" : 3005}
 			]
 		},
 		{
 			"query": "Copper",
 			"answers": [
-				{"label": "symbol", "answer" : "Cu"},
-				{"label": "atomic_number", "answer" : 29},
-				{"label": "atomic_weight", "answer" : 63.546},
-				{"label": "density g/cm", "answer" : "8.96 g/cm"},
-				{"label": "melting_point K", "answer" : 1356.6},
-				{"label": "boiling_point K", "answer" : 2840}
+				{"label": "Symbol", "answer" : "Cu"},
+				{"label": "Atomic Number", "answer" : 29},
+				{"label": "Atomic Weight", "answer" : 63.546},
+				{"label": "Density g/cm", "answer" : "8.96 g/cm"},
+				{"label": "Melting Point K", "answer" : 1356.6},
+				{"label": "Boiling Point K", "answer" : 2840}
 			]
 		},
 		{
 			"query": "Zinc",
 			"answers": [
-				{"label": "symbol", "answer" : "Zn"},
-				{"label": "atomic_number", "answer" : 30},
-				{"label": "atomic_weight", "answer" : 65.39},
-				{"label": "density g/cm", "answer" : "7.133 g/cm"},
-				{"label": "melting_point K", "answer" : 692.73},
-				{"label": "boiling_point K", "answer" : 1180}
+				{"label": "Symbol", "answer" : "Zn"},
+				{"label": "Atomic Number", "answer" : 30},
+				{"label": "Atomic Weight", "answer" : 65.39},
+				{"label": "Density g/cm", "answer" : "7.133 g/cm"},
+				{"label": "Melting Point K", "answer" : 692.73},
+				{"label": "Boiling Point K", "answer" : 1180}
 			]
 		},
 		{
 			"query": "Gallium",
 			"answers": [
-				{"label": "symbol", "answer" : "Ga"},
-				{"label": "atomic_number", "answer" : 31},
-				{"label": "atomic_weight", "answer" : 69.723},
-				{"label": "density g/cm", "answer" : "5.91 g/cm"},
-				{"label": "melting_point K", "answer" : 302.93},
-				{"label": "boiling_point K", "answer" : 2676}
+				{"label": "Symbol", "answer" : "Ga"},
+				{"label": "Atomic Number", "answer" : 31},
+				{"label": "Atomic Weight", "answer" : 69.723},
+				{"label": "Density g/cm", "answer" : "5.91 g/cm"},
+				{"label": "Melting Point K", "answer" : 302.93},
+				{"label": "Boiling Point K", "answer" : 2676}
 			]
 		},
 		{
 			"query": "Germanium",
 			"answers": [
-				{"label": "symbol", "answer" : "Ge"},
-				{"label": "atomic_number", "answer" : 32},
-				{"label": "atomic_weight", "answer" : 72.61},
-				{"label": "density g/cm", "answer" : "5.323 g/cm"},
-				{"label": "melting_point K", "answer" : 1210.6},
-				{"label": "boiling_point K", "answer" : 3103}
+				{"label": "Symbol", "answer" : "Ge"},
+				{"label": "Atomic Number", "answer" : 32},
+				{"label": "Atomic Weight", "answer" : 72.61},
+				{"label": "Density g/cm", "answer" : "5.323 g/cm"},
+				{"label": "Melting Point K", "answer" : 1210.6},
+				{"label": "Boiling Point K", "answer" : 3103}
 			]
 		},
 		{
 			"query": "Arsenic",
 			"answers": [
-				{"label": "symbol", "answer" : "As"},
-				{"label": "atomic_number", "answer" : 33},
-				{"label": "atomic_weight", "answer" : 74.92159},
-				{"label": "density g/cm", "answer" : "5.73 (grey arsenic)"},
-				{"label": "melting_point K", "answer" : 1090},
-				{"label": "boiling_point K", "answer" : 876}
+				{"label": "Symbol", "answer" : "As"},
+				{"label": "Atomic Number", "answer" : 33},
+				{"label": "Atomic Weight", "answer" : 74.92159},
+				{"label": "Density g/cm", "answer" : "5.73 (grey arsenic)"},
+				{"label": "Melting Point K", "answer" : 1090},
+				{"label": "Boiling Point K", "answer" : 876}
 			]
 		},
 		{
 			"query": "Selenium",
 			"answers": [
-				{"label": "symbol", "answer" : "Se"},
-				{"label": "atomic_number", "answer" : 34},
-				{"label": "atomic_weight", "answer" : 78.96},
-				{"label": "density g/cm", "answer" : "4.79 g/cm"},
-				{"label": "melting_point K", "answer" : 490},
-				{"label": "boiling_point K", "answer" : 958.1}
+				{"label": "Symbol", "answer" : "Se"},
+				{"label": "Atomic Number", "answer" : 34},
+				{"label": "Atomic Weight", "answer" : 78.96},
+				{"label": "Density g/cm", "answer" : "4.79 g/cm"},
+				{"label": "Melting Point K", "answer" : 490},
+				{"label": "Boiling Point K", "answer" : 958.1}
 			]
 		},
 		{
 			"query": "Bromine",
 			"answers": [
-				{"label": "symbol", "answer" : "Br"},
-				{"label": "atomic_number", "answer" : 35},
-				{"label": "atomic_weight", "answer" : 79.904},
-				{"label": "density g/cm", "answer" : "3.12 g/cm"},
-				{"label": "melting_point K", "answer" : 265.9},
-				{"label": "boiling_point K", "answer" : 331.9}
+				{"label": "Symbol", "answer" : "Br"},
+				{"label": "Atomic Number", "answer" : 35},
+				{"label": "Atomic Weight", "answer" : 79.904},
+				{"label": "Density g/cm", "answer" : "3.12 g/cm"},
+				{"label": "Melting Point K", "answer" : 265.9},
+				{"label": "Boiling Point K", "answer" : 331.9}
 			]
 		},
 		{
 			"query": "Krypton",
 			"answers": [
-				{"label": "symbol", "answer" : "Kr"},
-				{"label": "atomic_number", "answer" : 36},
-				{"label": "atomic_weight", "answer" : 83.8},
-				{"label": "density g/cm", "answer" : "2.155 (@ -153°C)"},
-				{"label": "melting_point K", "answer" : 116.6},
-				{"label": "boiling_point K", "answer" : 120.85}
+				{"label": "Symbol", "answer" : "Kr"},
+				{"label": "Atomic Number", "answer" : 36},
+				{"label": "Atomic Weight", "answer" : 83.8},
+				{"label": "Density g/cm", "answer" : "2.155 (@ -153°C)"},
+				{"label": "Melting Point K", "answer" : 116.6},
+				{"label": "Boiling Point K", "answer" : 120.85}
 			]
 		},
 		{
 			"query": "Rubidium",
 			"answers": [
-				{"label": "symbol", "answer" : "Rb"},
-				{"label": "atomic_number", "answer" : 37},
-				{"label": "atomic_weight", "answer" : 85.4678},
-				{"label": "density g/cm", "answer" : "1.532 g/cm"},
-				{"label": "melting_point K", "answer" : 312.2},
-				{"label": "boiling_point K", "answer" : 961}
+				{"label": "Symbol", "answer" : "Rb"},
+				{"label": "Atomic Number", "answer" : 37},
+				{"label": "Atomic Weight", "answer" : 85.4678},
+				{"label": "Density g/cm", "answer" : "1.532 g/cm"},
+				{"label": "Melting Point K", "answer" : 312.2},
+				{"label": "Boiling Point K", "answer" : 961}
 			]
 		},
 		{
 			"query": "Strontium",
 			"answers": [
-				{"label": "symbol", "answer" : "Sr"},
-				{"label": "atomic_number", "answer" : 38},
-				{"label": "atomic_weight", "answer" : 87.62},
-				{"label": "density g/cm", "answer" : "2.54 g/cm"},
-				{"label": "melting_point K", "answer" : 1042},
-				{"label": "boiling_point K", "answer" : 1657}
+				{"label": "Symbol", "answer" : "Sr"},
+				{"label": "Atomic Number", "answer" : 38},
+				{"label": "Atomic Weight", "answer" : 87.62},
+				{"label": "Density g/cm", "answer" : "2.54 g/cm"},
+				{"label": "Melting Point K", "answer" : 1042},
+				{"label": "Boiling Point K", "answer" : 1657}
 			]
 		},
 		{
 			"query": "Yttrium",
 			"answers": [
-				{"label": "symbol", "answer" : "Y"},
-				{"label": "atomic_number", "answer" : 39},
-				{"label": "atomic_weight", "answer" : 88.90585},
-				{"label": "density g/cm", "answer" : "4.47 g/cm"},
-				{"label": "melting_point K", "answer" : 1795},
-				{"label": "boiling_point K", "answer" : 3611}
+				{"label": "Symbol", "answer" : "Y"},
+				{"label": "Atomic Number", "answer" : 39},
+				{"label": "Atomic Weight", "answer" : 88.90585},
+				{"label": "Density g/cm", "answer" : "4.47 g/cm"},
+				{"label": "Melting Point K", "answer" : 1795},
+				{"label": "Boiling Point K", "answer" : 3611}
 			]
 		},
 		{
 			"query": "Zirconium",
 			"answers": [
-				{"label": "symbol", "answer" : "Zr"},
-				{"label": "atomic_number", "answer" : 40},
-				{"label": "atomic_weight", "answer" : 91.224},
-				{"label": "density g/cm", "answer" : "6.506 g/cm"},
-				{"label": "melting_point K", "answer" : 2125},
-				{"label": "boiling_point K", "answer" : 4650}
+				{"label": "Symbol", "answer" : "Zr"},
+				{"label": "Atomic Number", "answer" : 40},
+				{"label": "Atomic Weight", "answer" : 91.224},
+				{"label": "Density g/cm", "answer" : "6.506 g/cm"},
+				{"label": "Melting Point K", "answer" : 2125},
+				{"label": "Boiling Point K", "answer" : 4650}
 			]
 		},
 		{
 			"query": "Niobium",
 			"answers": [
-				{"label": "symbol", "answer" : "Nb"},
-				{"label": "atomic_number", "answer" : 41},
-				{"label": "atomic_weight", "answer" : 92.90638},
-				{"label": "density g/cm", "answer" : "8.57 g/cm"},
-				{"label": "melting_point K", "answer" : 2741},
-				{"label": "boiling_point K", "answer" : 5015}
+				{"label": "Symbol", "answer" : "Nb"},
+				{"label": "Atomic Number", "answer" : 41},
+				{"label": "Atomic Weight", "answer" : 92.90638},
+				{"label": "Density g/cm", "answer" : "8.57 g/cm"},
+				{"label": "Melting Point K", "answer" : 2741},
+				{"label": "Boiling Point K", "answer" : 5015}
 			]
 		},
 		{
 			"query": "Molybdenum",
 			"answers": [
-				{"label": "symbol", "answer" : "Mo"},
-				{"label": "atomic_number", "answer" : 42},
-				{"label": "atomic_weight", "answer" : 95.94},
-				{"label": "density g/cm", "answer" : "10.22 g/cm"},
-				{"label": "melting_point K", "answer" : 2890},
-				{"label": "boiling_point K", "answer" : 4885}
+				{"label": "Symbol", "answer" : "Mo"},
+				{"label": "Atomic Number", "answer" : 42},
+				{"label": "Atomic Weight", "answer" : 95.94},
+				{"label": "Density g/cm", "answer" : "10.22 g/cm"},
+				{"label": "Melting Point K", "answer" : 2890},
+				{"label": "Boiling Point K", "answer" : 4885}
 			]
 		},
 		{
 			"query": "Technetium",
 			"answers": [
-				{"label": "symbol", "answer" : "Tc"},
-				{"label": "atomic_number", "answer" : 43},
-				{"label": "atomic_weight", "answer" : 97.9072},
-				{"label": "density g/cm", "answer" : "11.5 g/cm"},
-				{"label": "melting_point K", "answer" : 2445},
-				{"label": "boiling_point K", "answer" : 5150}
+				{"label": "Symbol", "answer" : "Tc"},
+				{"label": "Atomic Number", "answer" : 43},
+				{"label": "Atomic Weight", "answer" : 97.9072},
+				{"label": "Density g/cm", "answer" : "11.5 g/cm"},
+				{"label": "Melting Point K", "answer" : 2445},
+				{"label": "Boiling Point K", "answer" : 5150}
 			]
 		},
 		{
 			"query": "Ruthenium",
 			"answers": [
-				{"label": "symbol", "answer" : "Ru"},
-				{"label": "atomic_number", "answer" : 44},
-				{"label": "atomic_weight", "answer" : 101.07},
-				{"label": "density g/cm", "answer" : "12.41 g/cm"},
-				{"label": "melting_point K", "answer" : 2583},
-				{"label": "boiling_point K", "answer" : 4173}
+				{"label": "Symbol", "answer" : "Ru"},
+				{"label": "Atomic Number", "answer" : 44},
+				{"label": "Atomic Weight", "answer" : 101.07},
+				{"label": "Density g/cm", "answer" : "12.41 g/cm"},
+				{"label": "Melting Point K", "answer" : 2583},
+				{"label": "Boiling Point K", "answer" : 4173}
 			]
 		},
 		{
 			"query": "Rhodium",
 			"answers": [
-				{"label": "symbol", "answer" : "Rh"},
-				{"label": "atomic_number", "answer" : 45},
-				{"label": "atomic_weight", "answer" : 102.9055},
-				{"label": "density g/cm", "answer" : "12.41 g/cm"},
-				{"label": "melting_point K", "answer" : 2239},
-				{"label": "boiling_point K", "answer" : 4000}
+				{"label": "Symbol", "answer" : "Rh"},
+				{"label": "Atomic Number", "answer" : 45},
+				{"label": "Atomic Weight", "answer" : 102.9055},
+				{"label": "Density g/cm", "answer" : "12.41 g/cm"},
+				{"label": "Melting Point K", "answer" : 2239},
+				{"label": "Boiling Point K", "answer" : 4000}
 			]
 		},
 		{
 			"query": "Palladium",
 			"answers": [
-				{"label": "symbol", "answer" : "Pd"},
-				{"label": "atomic_number", "answer" : 46},
-				{"label": "atomic_weight", "answer" : 106.42},
-				{"label": "density g/cm", "answer" : "12.02 g/cm"},
-				{"label": "melting_point K", "answer" : 1825},
-				{"label": "boiling_point K", "answer" : 3413}
+				{"label": "Symbol", "answer" : "Pd"},
+				{"label": "Atomic Number", "answer" : 46},
+				{"label": "Atomic Weight", "answer" : 106.42},
+				{"label": "Density g/cm", "answer" : "12.02 g/cm"},
+				{"label": "Melting Point K", "answer" : 1825},
+				{"label": "Boiling Point K", "answer" : 3413}
 			]
 		},
 		{
 			"query": "Silver",
 			"answers": [
-				{"label": "symbol", "answer" : "Ag"},
-				{"label": "atomic_number", "answer" : 47},
-				{"label": "atomic_weight", "answer" : 107.8682},
-				{"label": "density g/cm", "answer" : "10.5 g/cm"},
-				{"label": "melting_point K", "answer" : 1235.1},
-				{"label": "boiling_point K", "answer" : 2485}
+				{"label": "Symbol", "answer" : "Ag"},
+				{"label": "Atomic Number", "answer" : 47},
+				{"label": "Atomic Weight", "answer" : 107.8682},
+				{"label": "Density g/cm", "answer" : "10.5 g/cm"},
+				{"label": "Melting Point K", "answer" : 1235.1},
+				{"label": "Boiling Point K", "answer" : 2485}
 			]
 		},
 		{
 			"query": "Cadmium",
 			"answers": [
-				{"label": "symbol", "answer" : "Cd"},
-				{"label": "atomic_number", "answer" : 48},
-				{"label": "atomic_weight", "answer" : 112.411},
-				{"label": "density g/cm", "answer" : "8.65 g/cm"},
-				{"label": "melting_point K", "answer" : 594.1},
-				{"label": "boiling_point K", "answer" : 1038}
+				{"label": "Symbol", "answer" : "Cd"},
+				{"label": "Atomic Number", "answer" : 48},
+				{"label": "Atomic Weight", "answer" : 112.411},
+				{"label": "Density g/cm", "answer" : "8.65 g/cm"},
+				{"label": "Melting Point K", "answer" : 594.1},
+				{"label": "Boiling Point K", "answer" : 1038}
 			]
 		},
 		{
 			"query": "Indium",
 			"answers": [
-				{"label": "symbol", "answer" : "In"},
-				{"label": "atomic_number", "answer" : 49},
-				{"label": "atomic_weight", "answer" : 114.818},
-				{"label": "density g/cm", "answer" : "7.31 g/cm"},
-				{"label": "melting_point K", "answer" : 429.32},
-				{"label": "boiling_point K", "answer" : 2353}
+				{"label": "Symbol", "answer" : "In"},
+				{"label": "Atomic Number", "answer" : 49},
+				{"label": "Atomic Weight", "answer" : 114.818},
+				{"label": "Density g/cm", "answer" : "7.31 g/cm"},
+				{"label": "Melting Point K", "answer" : 429.32},
+				{"label": "Boiling Point K", "answer" : 2353}
 			]
 		},
 		{
 			"query": "Tin",
 			"answers": [
-				{"label": "symbol", "answer" : "Sn"},
-				{"label": "atomic_number", "answer" : 50},
-				{"label": "atomic_weight", "answer" : 118.71},
-				{"label": "density g/cm", "answer" : "7.31 g/cm"},
-				{"label": "melting_point K", "answer" : 505.1},
-				{"label": "boiling_point K", "answer" : 2543}
+				{"label": "Symbol", "answer" : "Sn"},
+				{"label": "Atomic Number", "answer" : 50},
+				{"label": "Atomic Weight", "answer" : 118.71},
+				{"label": "Density g/cm", "answer" : "7.31 g/cm"},
+				{"label": "Melting Point K", "answer" : 505.1},
+				{"label": "Boiling Point K", "answer" : 2543}
 			]
 		},
 		{
 			"query": "Antimony",
 			"answers": [
-				{"label": "symbol", "answer" : "Sb"},
-				{"label": "atomic_number", "answer" : 51},
-				{"label": "atomic_weight", "answer" : 121.760},
-				{"label": "density g/cm", "answer" : "6.691 g/cm"},
-				{"label": "melting_point K", "answer" : 903.9},
-				{"label": "boiling_point K", "answer" : 1908}
+				{"label": "Symbol", "answer" : "Sb"},
+				{"label": "Atomic Number", "answer" : 51},
+				{"label": "Atomic Weight", "answer" : 121.760},
+				{"label": "Density g/cm", "answer" : "6.691 g/cm"},
+				{"label": "Melting Point K", "answer" : 903.9},
+				{"label": "Boiling Point K", "answer" : 1908}
 			]
 		},
 		{
 			"query": "Tellurium",
 			"answers": [
-				{"label": "symbol", "answer" : "Te"},
-				{"label": "atomic_number", "answer" : 52},
-				{"label": "atomic_weight", "answer" : 127.6},
-				{"label": "density g/cm", "answer" : "6.24 g/cm"},
-				{"label": "melting_point K", "answer" : 722.7},
-				{"label": "boiling_point K", "answer" : 1263}
+				{"label": "Symbol", "answer" : "Te"},
+				{"label": "Atomic Number", "answer" : 52},
+				{"label": "Atomic Weight", "answer" : 127.6},
+				{"label": "Density g/cm", "answer" : "6.24 g/cm"},
+				{"label": "Melting Point K", "answer" : 722.7},
+				{"label": "Boiling Point K", "answer" : 1263}
 			]
 		},
 		{
 			"query": "Iodine",
 			"answers": [
-				{"label": "symbol", "answer" : "I"},
-				{"label": "atomic_number", "answer" : 53},
-				{"label": "atomic_weight", "answer" : 126.90447},
-				{"label": "density g/cm", "answer" : "4.93 g/cm"},
-				{"label": "melting_point K", "answer" : 386.7},
-				{"label": "boiling_point K", "answer" : 457.5}
+				{"label": "Symbol", "answer" : "I"},
+				{"label": "Atomic Number", "answer" : 53},
+				{"label": "Atomic Weight", "answer" : 126.90447},
+				{"label": "Density g/cm", "answer" : "4.93 g/cm"},
+				{"label": "Melting Point K", "answer" : 386.7},
+				{"label": "Boiling Point K", "answer" : 457.5}
 			]
 		},
 		{
 			"query": "Xenon",
 			"answers": [
-				{"label": "symbol", "answer" : "Xe"},
-				{"label": "atomic_number", "answer" : 54},
-				{"label": "atomic_weight", "answer" : 131.29},
-				{"label": "density g/cm", "answer" : "3.52 (@ -109°C)"},
-				{"label": "melting_point K", "answer" : 161.3},
-				{"label": "boiling_point K", "answer" : 166.1}
+				{"label": "Symbol", "answer" : "Xe"},
+				{"label": "Atomic Number", "answer" : 54},
+				{"label": "Atomic Weight", "answer" : 131.29},
+				{"label": "Density g/cm", "answer" : "3.52 (@ -109°C)"},
+				{"label": "Melting Point K", "answer" : 161.3},
+				{"label": "Boiling Point K", "answer" : 166.1}
 			]
 		},
 		{
 			"query": "Cesium",
 			"answers": [
-				{"label": "symbol", "answer" : "Cs"},
-				{"label": "atomic_number", "answer" : 55},
-				{"label": "atomic_weight", "answer" : 132.90543},
-				{"label": "density g/cm", "answer" : "1.873 g/cm"},
-				{"label": "melting_point K", "answer" : 301.6},
-				{"label": "boiling_point K", "answer" : 951.6}
+				{"label": "Symbol", "answer" : "Cs"},
+				{"label": "Atomic Number", "answer" : 55},
+				{"label": "Atomic Weight", "answer" : 132.90543},
+				{"label": "Density g/cm", "answer" : "1.873 g/cm"},
+				{"label": "Melting Point K", "answer" : 301.6},
+				{"label": "Boiling Point K", "answer" : 951.6}
 			]
 		},
 		{
 			"query": "Barium",
 			"answers": [
-				{"label": "symbol", "answer" : "Ba"},
-				{"label": "atomic_number", "answer" : 56},
-				{"label": "atomic_weight", "answer" : 137.327},
-				{"label": "density g/cm", "answer" : "3.5 g/cm"},
-				{"label": "melting_point K", "answer" : 1002},
-				{"label": "boiling_point K", "answer" : 1910}
+				{"label": "Symbol", "answer" : "Ba"},
+				{"label": "Atomic Number", "answer" : 56},
+				{"label": "Atomic Weight", "answer" : 137.327},
+				{"label": "Density g/cm", "answer" : "3.5 g/cm"},
+				{"label": "Melting Point K", "answer" : 1002},
+				{"label": "Boiling Point K", "answer" : 1910}
 			]
 		},
 		{
 			"query": "Lanthanum",
 			"answers": [
-				{"label": "symbol", "answer" : "La"},
-				{"label": "atomic_number", "answer" : 57},
-				{"label": "atomic_weight", "answer" : 138.9055},
-				{"label": "density g/cm", "answer" : "6.15 g/cm"},
-				{"label": "melting_point K", "answer" : 1194},
-				{"label": "boiling_point K", "answer" : 3730}
+				{"label": "Symbol", "answer" : "La"},
+				{"label": "Atomic Number", "answer" : 57},
+				{"label": "Atomic Weight", "answer" : 138.9055},
+				{"label": "Density g/cm", "answer" : "6.15 g/cm"},
+				{"label": "Melting Point K", "answer" : 1194},
+				{"label": "Boiling Point K", "answer" : 3730}
 			]
 		},
 		{
 			"query": "Cerium",
 			"answers": [
-				{"label": "symbol", "answer" : "Ce"},
-				{"label": "atomic_number", "answer" : 58},
-				{"label": "atomic_weight", "answer" : 140.115},
-				{"label": "density g/cm", "answer" : "6.757 g/cm"},
-				{"label": "melting_point K", "answer" : 1072},
-				{"label": "boiling_point K", "answer" : 3699}
+				{"label": "Symbol", "answer" : "Ce"},
+				{"label": "Atomic Number", "answer" : 58},
+				{"label": "Atomic Weight", "answer" : 140.115},
+				{"label": "Density g/cm", "answer" : "6.757 g/cm"},
+				{"label": "Melting Point K", "answer" : 1072},
+				{"label": "Boiling Point K", "answer" : 3699}
 			]
 		},
 		{
 			"query": "Praseodymium",
 			"answers": [
-				{"label": "symbol", "answer" : "Pr"},
-				{"label": "atomic_number", "answer" : 59},
-				{"label": "atomic_weight", "answer" : 140.90765},
-				{"label": "density g/cm", "answer" : "6.773 g/cm"},
-				{"label": "melting_point K", "answer" : 1204},
-				{"label": "boiling_point K", "answer" : 3785}
+				{"label": "Symbol", "answer" : "Pr"},
+				{"label": "Atomic Number", "answer" : 59},
+				{"label": "Atomic Weight", "answer" : 140.90765},
+				{"label": "Density g/cm", "answer" : "6.773 g/cm"},
+				{"label": "Melting Point K", "answer" : 1204},
+				{"label": "Boiling Point K", "answer" : 3785}
 			]
 		},
 		{
 			"query": "Neodymium",
 			"answers": [
-				{"label": "symbol", "answer" : "Nd"},
-				{"label": "atomic_number", "answer" : 60},
-				{"label": "atomic_weight", "answer" : 144.24},
-				{"label": "density g/cm", "answer" : "7.007 g/cm"},
-				{"label": "melting_point K", "answer" : 1294},
-				{"label": "boiling_point K", "answer" : 3341}
+				{"label": "Symbol", "answer" : "Nd"},
+				{"label": "Atomic Number", "answer" : 60},
+				{"label": "Atomic Weight", "answer" : 144.24},
+				{"label": "Density g/cm", "answer" : "7.007 g/cm"},
+				{"label": "Melting Point K", "answer" : 1294},
+				{"label": "Boiling Point K", "answer" : 3341}
 			]
 		},
 		{
 			"query": "Promethium",
 			"answers": [
-				{"label": "symbol", "answer" : "Pm"},
-				{"label": "atomic_number", "answer" : 61},
-				{"label": "atomic_weight", "answer" : 144.9127},
-				{"label": "density g/cm", "answer" : "7.2 g/cm"},
-				{"label": "melting_point K", "answer" : 1441},
-				{"label": "boiling_point K", "answer" : 3000}
+				{"label": "Symbol", "answer" : "Pm"},
+				{"label": "Atomic Number", "answer" : 61},
+				{"label": "Atomic Weight", "answer" : 144.9127},
+				{"label": "Density g/cm", "answer" : "7.2 g/cm"},
+				{"label": "Melting Point K", "answer" : 1441},
+				{"label": "Boiling Point K", "answer" : 3000}
 			]
 		},
 		{
 			"query": "Samarium",
 			"answers": [
-				{"label": "symbol", "answer" : "Sm"},
-				{"label": "atomic_number", "answer" : 62},
-				{"label": "atomic_weight", "answer" : 150.36},
-				{"label": "density g/cm", "answer" : "7.520 g/cm"},
-				{"label": "melting_point K", "answer" : 1350},
-				{"label": "boiling_point K", "answer" : 2064}
+				{"label": "Symbol", "answer" : "Sm"},
+				{"label": "Atomic Number", "answer" : 62},
+				{"label": "Atomic Weight", "answer" : 150.36},
+				{"label": "Density g/cm", "answer" : "7.520 g/cm"},
+				{"label": "Melting Point K", "answer" : 1350},
+				{"label": "Boiling Point K", "answer" : 2064}
 			]
 		},
 		{
 			"query": "Europium",
 			"answers": [
-				{"label": "symbol", "answer" : "Eu"},
-				{"label": "atomic_number", "answer" : 63},
-				{"label": "atomic_weight", "answer" : 151.965},
-				{"label": "density g/cm", "answer" : "5.243 g/cm"},
-				{"label": "melting_point K", "answer" : 1095},
-				{"label": "boiling_point K", "answer" : 1870}
+				{"label": "Symbol", "answer" : "Eu"},
+				{"label": "Atomic Number", "answer" : 63},
+				{"label": "Atomic Weight", "answer" : 151.965},
+				{"label": "Density g/cm", "answer" : "5.243 g/cm"},
+				{"label": "Melting Point K", "answer" : 1095},
+				{"label": "Boiling Point K", "answer" : 1870}
 			]
 		},
 		{
 			"query": "Gadolinium",
 			"answers": [
-				{"label": "symbol", "answer" : "Gd"},
-				{"label": "atomic_number", "answer" : 64},
-				{"label": "atomic_weight", "answer" : 157.25},
-				{"label": "density g/cm", "answer" : "7.900 g/cm"},
-				{"label": "melting_point K", "answer" : 1586},
-				{"label": "boiling_point K", "answer" : 3539}
+				{"label": "Symbol", "answer" : "Gd"},
+				{"label": "Atomic Number", "answer" : 64},
+				{"label": "Atomic Weight", "answer" : 157.25},
+				{"label": "Density g/cm", "answer" : "7.900 g/cm"},
+				{"label": "Melting Point K", "answer" : 1586},
+				{"label": "Boiling Point K", "answer" : 3539}
 			]
 		},
 		{
 			"query": "Terbium",
 			"answers": [
-				{"label": "symbol", "answer" : "Tb"},
-				{"label": "atomic_number", "answer" : 65},
-				{"label": "atomic_weight", "answer" : 158.92534},
-				{"label": "density g/cm", "answer" : "8.229 g/cm"},
-				{"label": "melting_point K", "answer" : 1629},
-				{"label": "boiling_point K", "answer" : 3296}
+				{"label": "Symbol", "answer" : "Tb"},
+				{"label": "Atomic Number", "answer" : 65},
+				{"label": "Atomic Weight", "answer" : 158.92534},
+				{"label": "Density g/cm", "answer" : "8.229 g/cm"},
+				{"label": "Melting Point K", "answer" : 1629},
+				{"label": "Boiling Point K", "answer" : 3296}
 			]
 		},
 		{
 			"query": "Dysprosium",
 			"answers": [
-				{"label": "symbol", "answer" : "Dy"},
-				{"label": "atomic_number", "answer" : 66},
-				{"label": "atomic_weight", "answer" : 162.50},
-				{"label": "density g/cm", "answer" : "8.55 g/cm"},
-				{"label": "melting_point K", "answer" : 1685},
-				{"label": "boiling_point K", "answer" : 2835}
+				{"label": "Symbol", "answer" : "Dy"},
+				{"label": "Atomic Number", "answer" : 66},
+				{"label": "Atomic Weight", "answer" : 162.50},
+				{"label": "Density g/cm", "answer" : "8.55 g/cm"},
+				{"label": "Melting Point K", "answer" : 1685},
+				{"label": "Boiling Point K", "answer" : 2835}
 			]
 		},
 		{
 			"query": "Holmium",
 			"answers": [
-				{"label": "symbol", "answer" : "Ho"},
-				{"label": "atomic_number", "answer" : 67},
-				{"label": "atomic_weight", "answer" : 164.93032},
-				{"label": "density g/cm", "answer" : "8.795 g/cm"},
-				{"label": "melting_point K", "answer" : 1747},
-				{"label": "boiling_point K", "answer" : 2968}
+				{"label": "Symbol", "answer" : "Ho"},
+				{"label": "Atomic Number", "answer" : 67},
+				{"label": "Atomic Weight", "answer" : 164.93032},
+				{"label": "Density g/cm", "answer" : "8.795 g/cm"},
+				{"label": "Melting Point K", "answer" : 1747},
+				{"label": "Boiling Point K", "answer" : 2968}
 			]
 		},
 		{
 			"query": "Erbium",
 			"answers": [
-				{"label": "symbol", "answer" : "Er"},
-				{"label": "atomic_number", "answer" : 68},
-				{"label": "atomic_weight", "answer" : 167.26},
-				{"label": "density g/cm", "answer" : "9.06 g/cm"},
-				{"label": "melting_point K", "answer" : 1802},
-				{"label": "boiling_point K", "answer" : 3136}
+				{"label": "Symbol", "answer" : "Er"},
+				{"label": "Atomic Number", "answer" : 68},
+				{"label": "Atomic Weight", "answer" : 167.26},
+				{"label": "Density g/cm", "answer" : "9.06 g/cm"},
+				{"label": "Melting Point K", "answer" : 1802},
+				{"label": "Boiling Point K", "answer" : 3136}
 			]
 		},
 		{
 			"query": "Thulium",
 			"answers": [
-				{"label": "symbol", "answer" : "Tm"},
-				{"label": "atomic_number", "answer" : 69},
-				{"label": "atomic_weight", "answer" : 168.93421},
-				{"label": "density g/cm", "answer" : "9.321 g/cm"},
-				{"label": "melting_point K", "answer" : 1818},
-				{"label": "boiling_point K", "answer" : 2220}
+				{"label": "Symbol", "answer" : "Tm"},
+				{"label": "Atomic Number", "answer" : 69},
+				{"label": "Atomic Weight", "answer" : 168.93421},
+				{"label": "Density g/cm", "answer" : "9.321 g/cm"},
+				{"label": "Melting Point K", "answer" : 1818},
+				{"label": "Boiling Point K", "answer" : 2220}
 			]
 		},
 		{
 			"query": "Ytterbium",
 			"answers": [
-				{"label": "symbol", "answer" : "Yb"},
-				{"label": "atomic_number", "answer" : 70},
-				{"label": "atomic_weight", "answer" : 173.04},
-				{"label": "density g/cm", "answer" : "6.9654 g/cm"},
-				{"label": "melting_point K", "answer" : 1097},
-				{"label": "boiling_point K", "answer" : 1466}
+				{"label": "Symbol", "answer" : "Yb"},
+				{"label": "Atomic Number", "answer" : 70},
+				{"label": "Atomic Weight", "answer" : 173.04},
+				{"label": "Density g/cm", "answer" : "6.9654 g/cm"},
+				{"label": "Melting Point K", "answer" : 1097},
+				{"label": "Boiling Point K", "answer" : 1466}
 			]
 		},
 		{
 			"query": "Lutetium",
 			"answers": [
-				{"label": "symbol", "answer" : "Lu"},
-				{"label": "atomic_number", "answer" : 71},
-				{"label": "atomic_weight", "answer" : 174.967},
-				{"label": "density g/cm", "answer" : "9.8404 g/cm"},
-				{"label": "melting_point K", "answer" : 1936},
-				{"label": "boiling_point K", "answer" : 3668}
+				{"label": "Symbol", "answer" : "Lu"},
+				{"label": "Atomic Number", "answer" : 71},
+				{"label": "Atomic Weight", "answer" : 174.967},
+				{"label": "Density g/cm", "answer" : "9.8404 g/cm"},
+				{"label": "Melting Point K", "answer" : 1936},
+				{"label": "Boiling Point K", "answer" : 3668}
 			]
 		},
 		{
 			"query": "Hafnium",
 			"answers": [
-				{"label": "symbol", "answer" : "Hf"},
-				{"label": "atomic_number", "answer" : 72},
-				{"label": "atomic_weight", "answer" : 178.49},
-				{"label": "density g/cm", "answer" : "13.31 g/cm"},
-				{"label": "melting_point K", "answer" : 2503},
-				{"label": "boiling_point K", "answer" : 5470}
+				{"label": "Symbol", "answer" : "Hf"},
+				{"label": "Atomic Number", "answer" : 72},
+				{"label": "Atomic Weight", "answer" : 178.49},
+				{"label": "Density g/cm", "answer" : "13.31 g/cm"},
+				{"label": "Melting Point K", "answer" : 2503},
+				{"label": "Boiling Point K", "answer" : 5470}
 			]
 		},
 		{
 			"query": "Tantalum",
 			"answers": [
-				{"label": "symbol", "answer" : "Ta"},
-				{"label": "atomic_number", "answer" : 73},
-				{"label": "atomic_weight", "answer" : 180.9479},
-				{"label": "density g/cm", "answer" : "16.654 g/cm"},
-				{"label": "melting_point K", "answer" : 3269},
-				{"label": "boiling_point K", "answer" : 5698}
+				{"label": "Symbol", "answer" : "Ta"},
+				{"label": "Atomic Number", "answer" : 73},
+				{"label": "Atomic Weight", "answer" : 180.9479},
+				{"label": "Density g/cm", "answer" : "16.654 g/cm"},
+				{"label": "Melting Point K", "answer" : 3269},
+				{"label": "Boiling Point K", "answer" : 5698}
 			]
 		},
 		{
 			"query": "Tungsten",
 			"answers": [
-				{"label": "symbol", "answer" : "W"},
-				{"label": "atomic_number", "answer" : 74},
-				{"label": "atomic_weight", "answer" : 183.84},
-				{"label": "density g/cm", "answer" : "19.3 g/cm"},
-				{"label": "melting_point K", "answer" : 3680},
-				{"label": "boiling_point K", "answer" : 5930}
+				{"label": "Symbol", "answer" : "W"},
+				{"label": "Atomic Number", "answer" : 74},
+				{"label": "Atomic Weight", "answer" : 183.84},
+				{"label": "Density g/cm", "answer" : "19.3 g/cm"},
+				{"label": "Melting Point K", "answer" : 3680},
+				{"label": "Boiling Point K", "answer" : 5930}
 			]
 		},
 		{
 			"query": "Rhenium",
 			"answers": [
-				{"label": "symbol", "answer" : "Re"},
-				{"label": "atomic_number", "answer" : 75},
-				{"label": "atomic_weight", "answer" : 186.207},
-				{"label": "density g/cm", "answer" : "21.02 g/cm"},
-				{"label": "melting_point K", "answer" : 3453},
-				{"label": "boiling_point K", "answer" : 5900}
+				{"label": "Symbol", "answer" : "Re"},
+				{"label": "Atomic Number", "answer" : 75},
+				{"label": "Atomic Weight", "answer" : 186.207},
+				{"label": "Density g/cm", "answer" : "21.02 g/cm"},
+				{"label": "Melting Point K", "answer" : 3453},
+				{"label": "Boiling Point K", "answer" : 5900}
 			]
 		},
 		{
 			"query": "Osmium",
 			"answers": [
-				{"label": "symbol", "answer" : "Os"},
-				{"label": "atomic_number", "answer" : 76},
-				{"label": "atomic_weight", "answer" : 190.23},
-				{"label": "density g/cm", "answer" : "22.57 g/cm"},
-				{"label": "melting_point K", "answer" : 3327},
-				{"label": "boiling_point K", "answer" : 5300}
+				{"label": "Symbol", "answer" : "Os"},
+				{"label": "Atomic Number", "answer" : 76},
+				{"label": "Atomic Weight", "answer" : 190.23},
+				{"label": "Density g/cm", "answer" : "22.57 g/cm"},
+				{"label": "Melting Point K", "answer" : 3327},
+				{"label": "Boiling Point K", "answer" : 5300}
 			]
 		},
 		{
 			"query": "Iridium",
 			"answers": [
-				{"label": "symbol", "answer" : "Ir"},
-				{"label": "atomic_number", "answer" : 77},
-				{"label": "atomic_weight", "answer" : 192.22},
-				{"label": "density g/cm", "answer" : "22.42 g/cm"},
-				{"label": "melting_point K", "answer" : 2683},
-				{"label": "boiling_point K", "answer" : 4403}
+				{"label": "Symbol", "answer" : "Ir"},
+				{"label": "Atomic Number", "answer" : 77},
+				{"label": "Atomic Weight", "answer" : 192.22},
+				{"label": "Density g/cm", "answer" : "22.42 g/cm"},
+				{"label": "Melting Point K", "answer" : 2683},
+				{"label": "Boiling Point K", "answer" : 4403}
 			]
 		},
 		{
 			"query": "Platinum",
 			"answers": [
-				{"label": "symbol", "answer" : "Pt"},
-				{"label": "atomic_number", "answer" : 78},
-				{"label": "atomic_weight", "answer" : 195.08},
-				{"label": "density g/cm", "answer" : "21.45 g/cm"},
-				{"label": "melting_point K", "answer" : 2045},
-				{"label": "boiling_point K", "answer" : 4100}
+				{"label": "Symbol", "answer" : "Pt"},
+				{"label": "Atomic Number", "answer" : 78},
+				{"label": "Atomic Weight", "answer" : 195.08},
+				{"label": "Density g/cm", "answer" : "21.45 g/cm"},
+				{"label": "Melting Point K", "answer" : 2045},
+				{"label": "Boiling Point K", "answer" : 4100}
 			]
 		},
 		{
 			"query": "Gold",
 			"answers": [
-				{"label": "symbol", "answer" : "Au"},
-				{"label": "atomic_number", "answer" : 79},
-				{"label": "atomic_weight", "answer" : 196.96654},
-				{"label": "density g/cm", "answer" : "19.3 g/cm"},
-				{"label": "melting_point K", "answer" : 1337.58},
-				{"label": "boiling_point K", "answer" : 3080}
+				{"label": "Symbol", "answer" : "Au"},
+				{"label": "Atomic Number", "answer" : 79},
+				{"label": "Atomic Weight", "answer" : 196.96654},
+				{"label": "Density g/cm", "answer" : "19.3 g/cm"},
+				{"label": "Melting Point K", "answer" : 1337.58},
+				{"label": "Boiling Point K", "answer" : 3080}
 			]
 		},
 		{
 			"query": "Mercury",
 			"answers": [
-				{"label": "symbol", "answer" : "Hg"},
-				{"label": "atomic_number", "answer" : 80},
-				{"label": "atomic_weight", "answer" : 200.59},
-				{"label": "density g/cm", "answer" : "13.546 (@ +20°C)"},
-				{"label": "melting_point K", "answer" : 234.28},
-				{"label": "boiling_point K", "answer" : 629.73}
+				{"label": "Symbol", "answer" : "Hg"},
+				{"label": "Atomic Number", "answer" : 80},
+				{"label": "Atomic Weight", "answer" : 200.59},
+				{"label": "Density g/cm", "answer" : "13.546 (@ +20°C)"},
+				{"label": "Melting Point K", "answer" : 234.28},
+				{"label": "Boiling Point K", "answer" : 629.73}
 			]
 		},
 		{
 			"query": "Thallium",
 			"answers": [
-				{"label": "symbol", "answer" : "Tl"},
-				{"label": "atomic_number", "answer" : 81},
-				{"label": "atomic_weight", "answer" : 204.3833},
-				{"label": "density g/cm", "answer" : "11.85 g/cm"},
-				{"label": "melting_point K", "answer" : 576.6},
-				{"label": "boiling_point K", "answer" : 1730}
+				{"label": "Symbol", "answer" : "Tl"},
+				{"label": "Atomic Number", "answer" : 81},
+				{"label": "Atomic Weight", "answer" : 204.3833},
+				{"label": "Density g/cm", "answer" : "11.85 g/cm"},
+				{"label": "Melting Point K", "answer" : 576.6},
+				{"label": "Boiling Point K", "answer" : 1730}
 			]
 		},
 		{
 			"query": "Lead",
 			"answers": [
-				{"label": "symbol", "answer" : "Pb"},
-				{"label": "atomic_number", "answer" : 82},
-				{"label": "atomic_weight", "answer" : 207.2},
-				{"label": "density g/cm", "answer" : "11.35 g/cm"},
-				{"label": "melting_point K", "answer" : 600.65},
-				{"label": "boiling_point K", "answer" : 2013}
+				{"label": "Symbol", "answer" : "Pb"},
+				{"label": "Atomic Number", "answer" : 82},
+				{"label": "Atomic Weight", "answer" : 207.2},
+				{"label": "Density g/cm", "answer" : "11.35 g/cm"},
+				{"label": "Melting Point K", "answer" : 600.65},
+				{"label": "Boiling Point K", "answer" : 2013}
 			]
 		},
 		{
 			"query": "Bismuth",
 			"answers": [
-				{"label": "symbol", "answer" : "Bi"},
-				{"label": "atomic_number", "answer" : 83},
-				{"label": "atomic_weight", "answer" : 208.98037},
-				{"label": "density g/cm", "answer" : "9.747 g/cm"},
-				{"label": "melting_point K", "answer" : 544.5},
-				{"label": "boiling_point K", "answer" : 1883}
+				{"label": "Symbol", "answer" : "Bi"},
+				{"label": "Atomic Number", "answer" : 83},
+				{"label": "Atomic Weight", "answer" : 208.98037},
+				{"label": "Density g/cm", "answer" : "9.747 g/cm"},
+				{"label": "Melting Point K", "answer" : 544.5},
+				{"label": "Boiling Point K", "answer" : 1883}
 			]
 		},
 		{
 			"query": "Polonium",
 			"answers": [
-				{"label": "symbol", "answer" : "Po"},
-				{"label": "atomic_number", "answer" : 84},
-				{"label": "atomic_weight", "answer" : 208.9824},
-				{"label": "density g/cm", "answer" : "9.32 g/cm"},
-				{"label": "melting_point K", "answer" : 527},
-				{"label": "boiling_point K", "answer" : 1235}
+				{"label": "Symbol", "answer" : "Po"},
+				{"label": "Atomic Number", "answer" : 84},
+				{"label": "Atomic Weight", "answer" : 208.9824},
+				{"label": "Density g/cm", "answer" : "9.32 g/cm"},
+				{"label": "Melting Point K", "answer" : 527},
+				{"label": "Boiling Point K", "answer" : 1235}
 			]
 		},
 		{
 			"query": "Astatine",
 			"answers": [
-				{"label": "symbol", "answer" : "At"},
-				{"label": "atomic_number", "answer" : 85},
-				{"label": "atomic_weight", "answer" : 209.9871},
-				{"label": "density g/cm", "answer" : "n/a"},
-				{"label": "melting_point K", "answer" : 575},
-				{"label": "boiling_point K", "answer" : 610}
+				{"label": "Symbol", "answer" : "At"},
+				{"label": "Atomic Number", "answer" : 85},
+				{"label": "Atomic Weight", "answer" : 209.9871},
+				{"label": "Density g/cm", "answer" : "n/a"},
+				{"label": "Melting Point K", "answer" : 575},
+				{"label": "Boiling Point K", "answer" : 610}
 			]
 		},
 		{
 			"query": "Radon",
 			"answers": [
-				{"label": "symbol", "answer" : "Rn"},
-				{"label": "atomic_number", "answer" : 86},
-				{"label": "atomic_weight", "answer" : 222.0176},
-				{"label": "density g/cm", "answer" : "4.4 (@ -62°C)"},
-				{"label": "melting_point K", "answer" : 202},
-				{"label": "boiling_point K", "answer" : 211.4}
+				{"label": "Symbol", "answer" : "Rn"},
+				{"label": "Atomic Number", "answer" : 86},
+				{"label": "Atomic Weight", "answer" : 222.0176},
+				{"label": "Density g/cm", "answer" : "4.4 (@ -62°C)"},
+				{"label": "Melting Point K", "answer" : 202},
+				{"label": "Boiling Point K", "answer" : 211.4}
 			]
 		},
 		{
 			"query": "Francium",
 			"answers": [
-				{"label": "symbol", "answer" : "Fr"},
-				{"label": "atomic_number", "answer" : 87},
-				{"label": "atomic_weight", "answer" : 223.0197},
-				{"label": "density g/cm", "answer" : "n/a"},
-				{"label": "melting_point K", "answer" : 300},
-				{"label": "boiling_point K", "answer" : 950}
+				{"label": "Symbol", "answer" : "Fr"},
+				{"label": "Atomic Number", "answer" : 87},
+				{"label": "Atomic Weight", "answer" : 223.0197},
+				{"label": "Density g/cm", "answer" : "n/a"},
+				{"label": "Melting Point K", "answer" : 300},
+				{"label": "Boiling Point K", "answer" : 950}
 			]
 		},
 		{
 			"query": "Radium",
 			"answers": [
-				{"label": "symbol", "answer" : "Ra"},
-				{"label": "atomic_number", "answer" : 88},
-				{"label": "atomic_weight", "answer" : 226.0254},
-				{"label": "density g/cm", "answer" : "(5.5)"},
-				{"label": "melting_point K", "answer" : 973},
-				{"label": "boiling_point K", "answer" : 1413}
+				{"label": "Symbol", "answer" : "Ra"},
+				{"label": "Atomic Number", "answer" : 88},
+				{"label": "Atomic Weight", "answer" : 226.0254},
+				{"label": "Density g/cm", "answer" : "(5.5)"},
+				{"label": "Melting Point K", "answer" : 973},
+				{"label": "Boiling Point K", "answer" : 1413}
 			]
 		},
 		{
 			"query": "Actinium",
 			"answers": [
-				{"label": "symbol", "answer" : "Ac"},
-				{"label": "atomic_number", "answer" : 89},
-				{"label": "atomic_weight", "answer" : 227.0278},
-				{"label": "density g/cm", "answer" : "n/a"},
-				{"label": "melting_point K", "answer" : 1320},
-				{"label": "boiling_point K", "answer" : 3470}
+				{"label": "Symbol", "answer" : "Ac"},
+				{"label": "Atomic Number", "answer" : 89},
+				{"label": "Atomic Weight", "answer" : 227.0278},
+				{"label": "Density g/cm", "answer" : "n/a"},
+				{"label": "Melting Point K", "answer" : 1320},
+				{"label": "Boiling Point K", "answer" : 3470}
 			]
 		},
 		{
 			"query": "Thorium",
 			"answers": [
-				{"label": "symbol", "answer" : "Th"},
-				{"label": "atomic_number", "answer" : 90},
-				{"label": "atomic_weight", "answer" : 232.0381},
-				{"label": "density g/cm", "answer" : "11.78 g/cm"},
-				{"label": "melting_point K", "answer" : 2028},
-				{"label": "boiling_point K", "answer" : 5060}
+				{"label": "Symbol", "answer" : "Th"},
+				{"label": "Atomic Number", "answer" : 90},
+				{"label": "Atomic Weight", "answer" : 232.0381},
+				{"label": "Density g/cm", "answer" : "11.78 g/cm"},
+				{"label": "Melting Point K", "answer" : 2028},
+				{"label": "Boiling Point K", "answer" : 5060}
 			]
 		},
 		{
 			"query": "Protactinium",
 			"answers": [
-				{"label": "symbol", "answer" : "Pa"},
-				{"label": "atomic_number", "answer" : 91},
-				{"label": "atomic_weight", "answer" : 231.03588},
-				{"label": "density g/cm", "answer" : "15.37 g/cm"},
-				{"label": "melting_point K", "answer" : 2113},
-				{"label": "boiling_point K", "answer" : 4300}
+				{"label": "Symbol", "answer" : "Pa"},
+				{"label": "Atomic Number", "answer" : 91},
+				{"label": "Atomic Weight", "answer" : 231.03588},
+				{"label": "Density g/cm", "answer" : "15.37 g/cm"},
+				{"label": "Melting Point K", "answer" : 2113},
+				{"label": "Boiling Point K", "answer" : 4300}
 			]
 		},
 		{
 			"query": "Uranium",
 			"answers": [
-				{"label": "symbol", "answer" : "U"},
-				{"label": "atomic_number", "answer" : 92},
-				{"label": "atomic_weight", "answer" : 238.0289},
-				{"label": "density g/cm", "answer" : "19.05 g/cm"},
-				{"label": "melting_point K", "answer" : 1405.5},
-				{"label": "boiling_point K", "answer" : 4018}
+				{"label": "Symbol", "answer" : "U"},
+				{"label": "Atomic Number", "answer" : 92},
+				{"label": "Atomic Weight", "answer" : 238.0289},
+				{"label": "Density g/cm", "answer" : "19.05 g/cm"},
+				{"label": "Melting Point K", "answer" : 1405.5},
+				{"label": "Boiling Point K", "answer" : 4018}
 			]
 		},
 		{
 			"query": "Neptunium",
 			"answers": [
-				{"label": "symbol", "answer" : "Np"},
-				{"label": "atomic_number", "answer" : 93},
-				{"label": "atomic_weight", "answer" : 237.048},
-				{"label": "density g/cm", "answer" : "20.25 g/cm"},
-				{"label": "melting_point K", "answer" : 913},
-				{"label": "boiling_point K", "answer" : 4175}
+				{"label": "Symbol", "answer" : "Np"},
+				{"label": "Atomic Number", "answer" : 93},
+				{"label": "Atomic Weight", "answer" : 237.048},
+				{"label": "Density g/cm", "answer" : "20.25 g/cm"},
+				{"label": "Melting Point K", "answer" : 913},
+				{"label": "Boiling Point K", "answer" : 4175}
 			]
 		},
 		{
 			"query": "Plutonium",
 			"answers": [
-				{"label": "symbol", "answer" : "Pu"},
-				{"label": "atomic_number", "answer" : 94},
-				{"label": "atomic_weight", "answer" : 244.0642},
-				{"label": "density g/cm", "answer" : "19.84 g/cm"},
-				{"label": "melting_point K", "answer" : 914},
-				{"label": "boiling_point K", "answer" : 3505}
+				{"label": "Symbol", "answer" : "Pu"},
+				{"label": "Atomic Number", "answer" : 94},
+				{"label": "Atomic Weight", "answer" : 244.0642},
+				{"label": "Density g/cm", "answer" : "19.84 g/cm"},
+				{"label": "Melting Point K", "answer" : 914},
+				{"label": "Boiling Point K", "answer" : 3505}
 			]
 		},
 		{
 			"query": "Americium",
 			"answers": [
-				{"label": "symbol", "answer" : "Am"},
-				{"label": "atomic_number", "answer" : 95},
-				{"label": "atomic_weight", "answer" : 243.0614},
-				{"label": "density g/cm", "answer" : "13.67 g/cm"},
-				{"label": "melting_point K", "answer" : 1267},
-				{"label": "boiling_point K", "answer" : 2880}
+				{"label": "Symbol", "answer" : "Am"},
+				{"label": "Atomic Number", "answer" : 95},
+				{"label": "Atomic Weight", "answer" : 243.0614},
+				{"label": "Density g/cm", "answer" : "13.67 g/cm"},
+				{"label": "Melting Point K", "answer" : 1267},
+				{"label": "Boiling Point K", "answer" : 2880}
 			]
 		},
 		{
 			"query": "Curium",
 			"answers": [
-				{"label": "symbol", "answer" : "Cm"},
-				{"label": "atomic_number", "answer" : 96},
-				{"label": "atomic_weight", "answer" : 247.0703},
-				{"label": "density g/cm", "answer" : "13.51 g/cm"},
-				{"label": "melting_point K", "answer" : 1340},
-				{"label": "boiling_point K", "answer" : "n/a"}
+				{"label": "Symbol", "answer" : "Cm"},
+				{"label": "Atomic Number", "answer" : 96},
+				{"label": "Atomic Weight", "answer" : 247.0703},
+				{"label": "Density g/cm", "answer" : "13.51 g/cm"},
+				{"label": "Melting Point K", "answer" : 1340},
+				{"label": "Boiling Point K", "answer" : "n/a"}
 			]
 		},
 		{
 			"query": "Berkelium",
 			"answers": [
-				{"label": "symbol", "answer" : "Bk"},
-				{"label": "atomic_number", "answer" : 97},
-				{"label": "atomic_weight", "answer" : 247.0703},
-				{"label": "density g/cm", "answer" : "13.25 g/cm"},
-				{"label": "melting_point K", "answer" : "n/a"},
-				{"label": "boiling_point K", "answer" : "n/a"}
+				{"label": "Symbol", "answer" : "Bk"},
+				{"label": "Atomic Number", "answer" : 97},
+				{"label": "Atomic Weight", "answer" : 247.0703},
+				{"label": "Density g/cm", "answer" : "13.25 g/cm"},
+				{"label": "Melting Point K", "answer" : "n/a"},
+				{"label": "Boiling Point K", "answer" : "n/a"}
 			]
 		},
 		{
 			"query": "Californium",
 			"answers": [
-				{"label": "symbol", "answer" : "Cf"},
-				{"label": "atomic_number", "answer" : 98},
-				{"label": "atomic_weight", "answer" : 251.0796},
-				{"label": "density g/cm", "answer" : "15.1 g/cm"},
-				{"label": "melting_point K", "answer" : 900},
-				{"label": "boiling_point K", "answer" : "n/a"}
+				{"label": "Symbol", "answer" : "Cf"},
+				{"label": "Atomic Number", "answer" : 98},
+				{"label": "Atomic Weight", "answer" : 251.0796},
+				{"label": "Density g/cm", "answer" : "15.1 g/cm"},
+				{"label": "Melting Point K", "answer" : 900},
+				{"label": "Boiling Point K", "answer" : "n/a"}
 			]
 		},
 		{
 			"query": "Einsteinium",
 			"answers": [
-				{"label": "symbol", "answer" : "Es"},
-				{"label": "atomic_number", "answer" : 99},
-				{"label": "atomic_weight", "answer" : 252.083},
-				{"label": "density g/cm", "answer" : "n/a"},
-				{"label": "melting_point K", "answer" : "n/a"},
-				{"label": "boiling_point K", "answer" : 1130}
+				{"label": "Symbol", "answer" : "Es"},
+				{"label": "Atomic Number", "answer" : 99},
+				{"label": "Atomic Weight", "answer" : 252.083},
+				{"label": "Density g/cm", "answer" : "n/a"},
+				{"label": "Melting Point K", "answer" : "n/a"},
+				{"label": "Boiling Point K", "answer" : 1130}
 			]
 		},
 		{
 			"query": "Fermium",
 			"answers": [
-				{"label": "symbol", "answer" : "Fm"},
-				{"label": "atomic_number", "answer" : 100},
-				{"label": "atomic_weight", "answer" : 257.0951},
-				{"label": "density g/cm", "answer" : "n/a"},
-				{"label": "melting_point K", "answer" : 1800},
-				{"label": "boiling_point K", "answer" : "n/a"}
+				{"label": "Symbol", "answer" : "Fm"},
+				{"label": "Atomic Number", "answer" : 100},
+				{"label": "Atomic Weight", "answer" : 257.0951},
+				{"label": "Density g/cm", "answer" : "n/a"},
+				{"label": "Melting Point K", "answer" : 1800},
+				{"label": "Boiling Point K", "answer" : "n/a"}
 			]
 		},
 		{
 			"query": "Mendelevium",
 			"answers": [
-				{"label": "symbol", "answer" : "Md"},
-				{"label": "atomic_number", "answer" : 101},
-				{"label": "atomic_weight", "answer" : 258.1},
-				{"label": "density g/cm", "answer" : "n/a"},
-				{"label": "melting_point K", "answer" : 1100},
-				{"label": "boiling_point K", "answer" : "n/a"}
+				{"label": "Symbol", "answer" : "Md"},
+				{"label": "Atomic Number", "answer" : 101},
+				{"label": "Atomic Weight", "answer" : 258.1},
+				{"label": "Density g/cm", "answer" : "n/a"},
+				{"label": "Melting Point K", "answer" : 1100},
+				{"label": "Boiling Point K", "answer" : "n/a"}
 			]
 		},
 		{
 			"query": "Nobelium",
 			"answers": [
-				{"label": "symbol", "answer" : "No"},
-				{"label": "atomic_number", "answer" : 102},
-				{"label": "atomic_weight", "answer" : 259.1009},
-				{"label": "density g/cm", "answer" : "n/a"},
-				{"label": "melting_point K", "answer" : 1100},
-				{"label": "boiling_point K", "answer" : "n/a"}
+				{"label": "Symbol", "answer" : "No"},
+				{"label": "Atomic Number", "answer" : 102},
+				{"label": "Atomic Weight", "answer" : 259.1009},
+				{"label": "Density g/cm", "answer" : "n/a"},
+				{"label": "Melting Point K", "answer" : 1100},
+				{"label": "Boiling Point K", "answer" : "n/a"}
 			]
 		},
 		{
 			"query": "Lawrencium",
 			"answers": [
-				{"label": "symbol", "answer" : "Lr"},
-				{"label": "atomic_number", "answer" : 103},
-				{"label": "atomic_weight", "answer" : 262.11},
-				{"label": "density g/cm", "answer" : "n/a"},
-				{"label": "melting_point K", "answer" : "n/a"},
-				{"label": "boiling_point K", "answer" : "n/a"}
+				{"label": "Symbol", "answer" : "Lr"},
+				{"label": "Atomic Number", "answer" : 103},
+				{"label": "Atomic Weight", "answer" : 262.11},
+				{"label": "Density g/cm", "answer" : "n/a"},
+				{"label": "Melting Point K", "answer" : "n/a"},
+				{"label": "Boiling Point K", "answer" : "n/a"}
 			]
 		},
 		{
 			"query": "Rutherfordium",
 			"answers": [
-				{"label": "symbol", "answer" : "Rf"},
-				{"label": "atomic_number", "answer" : 104},
-				{"label": "atomic_weight", "answer" : "[261]"},
-				{"label": "density g/cm", "answer" : "n/a"},
-				{"label": "melting_point K", "answer" : "n/a"},
-				{"label": "boiling_point K", "answer" : "n/a"}
+				{"label": "Symbol", "answer" : "Rf"},
+				{"label": "Atomic Number", "answer" : 104},
+				{"label": "Atomic Weight", "answer" : "[261]"},
+				{"label": "Density g/cm", "answer" : "n/a"},
+				{"label": "Melting Point K", "answer" : "n/a"},
+				{"label": "Boiling Point K", "answer" : "n/a"}
 			]
 		},
 		{
 			"query": "Dubnium",
 			"answers": [
-				{"label": "symbol", "answer" : "Db"},
-				{"label": "atomic_number", "answer" : 105},
-				{"label": "atomic_weight", "answer" : "[262]"},
-				{"label": "density g/cm", "answer" : "n/a"},
-				{"label": "melting_point K", "answer" : "n/a"},
-				{"label": "boiling_point K", "answer" : "n/a"}
+				{"label": "Symbol", "answer" : "Db"},
+				{"label": "Atomic Number", "answer" : 105},
+				{"label": "Atomic Weight", "answer" : "[262]"},
+				{"label": "Density g/cm", "answer" : "n/a"},
+				{"label": "Melting Point K", "answer" : "n/a"},
+				{"label": "Boiling Point K", "answer" : "n/a"}
 			]
 		},
 		{
 			"query": "Seaborgium",
 			"answers": [
-				{"label": "symbol", "answer" : "Sg"},
-				{"label": "atomic_number", "answer" : 106},
-				{"label": "atomic_weight", "answer" : "[266]"},
-				{"label": "density g/cm", "answer" : "n/a"},
-				{"label": "melting_point K", "answer" : "n/a"},
-				{"label": "boiling_point K", "answer" : "n/a"}
+				{"label": "Symbol", "answer" : "Sg"},
+				{"label": "Atomic Number", "answer" : 106},
+				{"label": "Atomic Weight", "answer" : "[266]"},
+				{"label": "Density g/cm", "answer" : "n/a"},
+				{"label": "Melting Point K", "answer" : "n/a"},
+				{"label": "Boiling Point K", "answer" : "n/a"}
 			]
 		},
 		{
 			"query": "Bohrium",
 			"answers": [
-				{"label": "symbol", "answer" : "Bh"},
-				{"label": "atomic_number", "answer" : 107},
-				{"label": "atomic_weight", "answer" : "[264]"},
-				{"label": "density g/cm", "answer" : "n/a"},
-				{"label": "melting_point K", "answer" : "n/a"},
-				{"label": "boiling_point K", "answer" : "n/a"}
+				{"label": "Symbol", "answer" : "Bh"},
+				{"label": "Atomic Number", "answer" : 107},
+				{"label": "Atomic Weight", "answer" : "[264]"},
+				{"label": "Density g/cm", "answer" : "n/a"},
+				{"label": "Melting Point K", "answer" : "n/a"},
+				{"label": "Boiling Point K", "answer" : "n/a"}
 			]
 		},
 		{
 			"query": "Hassium",
 			"answers": [
-				{"label": "symbol", "answer" : "Hs"},
-				{"label": "atomic_number", "answer" : 108},
-				{"label": "atomic_weight", "answer" : "[269]"},
-				{"label": "density g/cm", "answer" : "n/a"},
-				{"label": "melting_point K", "answer" : "n/a"},
-				{"label": "boiling_point K", "answer" : "n/a"}
+				{"label": "Symbol", "answer" : "Hs"},
+				{"label": "Atomic Number", "answer" : 108},
+				{"label": "Atomic Weight", "answer" : "[269]"},
+				{"label": "Density g/cm", "answer" : "n/a"},
+				{"label": "Melting Point K", "answer" : "n/a"},
+				{"label": "Boiling Point K", "answer" : "n/a"}
 			]
 		},
 		{
 			"query": "Meitnerium",
 			"answers": [
-				{"label": "symbol", "answer" : "Mt"},
-				{"label": "atomic_number", "answer" : 109},
-				{"label": "atomic_weight", "answer" : "[268]"},
-				{"label": "density g/cm", "answer" : "n/a"},
-				{"label": "melting_point K", "answer" : "n/a"},
-				{"label": "boiling_point K", "answer" : "n/a"}
+				{"label": "Symbol", "answer" : "Mt"},
+				{"label": "Atomic Number", "answer" : 109},
+				{"label": "Atomic Weight", "answer" : "[268]"},
+				{"label": "Density g/cm", "answer" : "n/a"},
+				{"label": "Melting Point K", "answer" : "n/a"},
+				{"label": "Boiling Point K", "answer" : "n/a"}
 			]
 		},
 		{
 			"query": "Ununnilium",
 			"answers": [
-				{"label": "symbol", "answer" : "Uun"},
-				{"label": "atomic_number", "answer" : 110},
-				{"label": "atomic_weight", "answer" : "[269]"},
-				{"label": "density g/cm", "answer" : "n/a"},
-				{"label": "melting_point K", "answer" : "n/a"},
-				{"label": "boiling_point K", "answer" : "n/a"}
+				{"label": "Symbol", "answer" : "Uun"},
+				{"label": "Atomic Number", "answer" : 110},
+				{"label": "Atomic Weight", "answer" : "[269]"},
+				{"label": "Density g/cm", "answer" : "n/a"},
+				{"label": "Melting Point K", "answer" : "n/a"},
+				{"label": "Boiling Point K", "answer" : "n/a"}
 			]
 		},
 		{
 			"query": "Unununium",
 			"answers": [
-				{"label": "symbol", "answer" : "Uuu"},
-				{"label": "atomic_number", "answer" : 111},
-				{"label": "atomic_weight", "answer" : "[272]"},
-				{"label": "density g/cm", "answer" : "n/a"},
-				{"label": "melting_point K", "answer" : "n/a"},
-				{"label": "boiling_point K", "answer" : "n/a"}
+				{"label": "Symbol", "answer" : "Uuu"},
+				{"label": "Atomic Number", "answer" : 111},
+				{"label": "Atomic Weight", "answer" : "[272]"},
+				{"label": "Density g/cm", "answer" : "n/a"},
+				{"label": "Melting Point K", "answer" : "n/a"},
+				{"label": "Boiling Point K", "answer" : "n/a"}
 			]
 		},
 		{
 			"query": "Ununbium",
 			"answers": [
-				{"label": "symbol", "answer" : "Uub"},
-				{"label": "atomic_number", "answer" : 112},
-				{"label": "atomic_weight", "answer" : "[277]"},
-				{"label": "density g/cm", "answer" : "n/a"},
-				{"label": "melting_point K", "answer" : "n/a"},
-				{"label": "boiling_point K", "answer" : "n/a"}
+				{"label": "Symbol", "answer" : "Uub"},
+				{"label": "Atomic Number", "answer" : 112},
+				{"label": "Atomic Weight", "answer" : "[277]"},
+				{"label": "Density g/cm", "answer" : "n/a"},
+				{"label": "Melting Point K", "answer" : "n/a"},
+				{"label": "Boiling Point K", "answer" : "n/a"}
 			]
 		},
 		{
 			"query": "Ununtrium",
 			"answers": [
-				{"label": "symbol", "answer" : "Uut"},
-				{"label": "atomic_number", "answer" : 113},
-				{"label": "atomic_weight", "answer" : "n/a"},
-				{"label": "density g/cm", "answer" : "n/a"},
-				{"label": "melting_point K", "answer" : "n/a"},
-				{"label": "boiling_point K", "answer" : "n/a"}
+				{"label": "Symbol", "answer" : "Uut"},
+				{"label": "Atomic Number", "answer" : 113},
+				{"label": "Atomic Weight", "answer" : "n/a"},
+				{"label": "Density g/cm", "answer" : "n/a"},
+				{"label": "Melting Point K", "answer" : "n/a"},
+				{"label": "Boiling Point K", "answer" : "n/a"}
 			]
 		},
 		{
 			"query": "Ununquadium",
 			"answers": [
-				{"label": "symbol", "answer" : "Uuq"},
-				{"label": "atomic_number", "answer" : 114},
-				{"label": "atomic_weight", "answer" : "[289]"},
-				{"label": "density g/cm", "answer" : "n/a"},
-				{"label": "melting_point K", "answer" : "n/a"},
-				{"label": "boiling_point K", "answer" : "n/a"}
+				{"label": "Symbol", "answer" : "Uuq"},
+				{"label": "Atomic Number", "answer" : 114},
+				{"label": "Atomic Weight", "answer" : "[289]"},
+				{"label": "Density g/cm", "answer" : "n/a"},
+				{"label": "Melting Point K", "answer" : "n/a"},
+				{"label": "Boiling Point K", "answer" : "n/a"}
 			]
 		},
 		{
 			"query": "Ununpentium",
 			"answers": [
-				{"label": "symbol", "answer" : "Uup"},
-				{"label": "atomic_number", "answer" : 115},
-				{"label": "atomic_weight", "answer" : "n/a"},
-				{"label": "density g/cm", "answer" : "n/a"},
-				{"label": "melting_point K", "answer" : "n/a"},
-				{"label": "boiling_point K", "answer" : "n/a"}
+				{"label": "Symbol", "answer" : "Uup"},
+				{"label": "Atomic Number", "answer" : 115},
+				{"label": "Atomic Weight", "answer" : "n/a"},
+				{"label": "Density g/cm", "answer" : "n/a"},
+				{"label": "Melting Point K", "answer" : "n/a"},
+				{"label": "Boiling Point K", "answer" : "n/a"}
 			]
 		},
 		{
 			"query": "Ununhexium",
 			"answers": [
-				{"label": "symbol", "answer" : "Uuh"},
-				{"label": "atomic_number", "answer" : 116},
-				{"label": "atomic_weight", "answer" : "n/a"},
-				{"label": "density g/cm", "answer" : "n/a"},
-				{"label": "melting_point K", "answer" : "n/a"},
-				{"label": "boiling_point K", "answer" : "n/a"}
+				{"label": "Symbol", "answer" : "Uuh"},
+				{"label": "Atomic Number", "answer" : 116},
+				{"label": "Atomic Weight", "answer" : "n/a"},
+				{"label": "Density g/cm", "answer" : "n/a"},
+				{"label": "Melting Point K", "answer" : "n/a"},
+				{"label": "Boiling Point K", "answer" : "n/a"}
 			]
 		},
 		{
 			"query": "Ununseptium",
 			"answers": [
-				{"label": "symbol", "answer" : "Uus"},
-				{"label": "atomic_number", "answer" : 117},
-				{"label": "atomic_weight", "answer" : "n/a"},
-				{"label": "density g/cm", "answer" : "n/a"},
-				{"label": "melting_point K", "answer" : "n/a"},
-				{"label": "boiling_point K", "answer" : "n/a"}
+				{"label": "Symbol", "answer" : "Uus"},
+				{"label": "Atomic Number", "answer" : 117},
+				{"label": "Atomic Weight", "answer" : "n/a"},
+				{"label": "Density g/cm", "answer" : "n/a"},
+				{"label": "Melting Point K", "answer" : "n/a"},
+				{"label": "Boiling Point K", "answer" : "n/a"}
 			]
 		},
 		{
 			"query": "Ununoctium",
 			"answers": [
-				{"label": "symbol", "answer" : "Uuo"},
-				{"label": "atomic_number", "answer" : 118},
-				{"label": "atomic_weight", "answer" : "n/a"},
-				{"label": "density g/cm", "answer" : "n/a"},
-				{"label": "melting_point K", "answer" : "n/a"},
-				{"label": "boiling_point K", "answer" : "n/a"}
+				{"label": "Symbol", "answer" : "Uuo"},
+				{"label": "Atomic Number", "answer" : 118},
+				{"label": "Atomic Weight", "answer" : "n/a"},
+				{"label": "Density g/cm", "answer" : "n/a"},
+				{"label": "Melting Point K", "answer" : "n/a"},
+				{"label": "Boiling Point K", "answer" : "n/a"}
 			]
 		}
 	]
