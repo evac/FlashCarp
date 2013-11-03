@@ -1,3 +1,7 @@
+// Default variables
+
+$default_font: Helvetica, Arial, sans-serif
+
 // Colors
 
 @function black($opacity)
@@ -9,18 +13,64 @@
 
 // Vendors
 
-=prefix($prop, $args...)
-	-webkit-#{$prop}: $args
-	-moz-#{$prop}: $args
-	-ms-#{$prop}: $args
-	-o-#{$prop}: $args
-	#{$prop}: $args
+=prefix($property, $args...)
+	-webkit-#{$property}: $args
+	-moz-#{$property}: $args
+	-ms-#{$property}: $args
+	-o-#{$property}: $args
+	#{$property}: $args
 
+
+=animation($args...)
+	+prefix('animation', $args)
+
+=animation-delay($args...)
+	+prefix('animation-delay', $args)
+
+=animation-duration($args...)
+	+prefix('animation-duration', $args)
+
+=backface-visibility($args...)
+	+prefix('backface-visibility', $args)
+
+=background-clip($args...)
+	+prefix('background-clip', $args)
+
+=border-radius($args...)
+	+prefix('border-radius', $args)
+
+=box-shadow($args...)
+	+prefix('box-shadow', $args)
+
+=perspective($args...)
+	+prefix('perspective', $args)
+
+=transition($args...)
+	+prefix('transition', $args)
+
+=transition-delay($args...)
+	+prefix('transition-delay', $args)
 
 =transition-property()
 	-webkit-transition-property: -webkit-transform
 	-moz-transition-property: -moz-transform
 	transition-property: transform
+
+=transform($args...)
+	+prefix('transform', $args)
+
+=transform-origin($args...)
+	+prefix('transform-origin', $args)
+
+=transform-style($args...)
+	+prefix('transform-style', $args)
+
+=translate($args...)
+	+prefix('translate', $args)
+
+=user-select($args...)
+	-webkit-touch-callout: $args
+	+prefix('user-select', $args)
 
 =user-select($args...)
 	-webkit-touch-callout: $args
