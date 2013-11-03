@@ -3,41 +3,36 @@
 #cardset
 	padding: 0
 	list-style: none
-	li
+	> li
 		position: relative
 		margin: 5px
 		padding: 15px
 		.view label
 			word-break: break-word
-		.update
-			display: none
-	.editing
-		border-bottom: none
-		margin-top: -1px
-		padding: 0
-		&:last-child
-			margin-bottom: -1px
-		.query, .answers
-			+box-shadow(0 1px 10px black(.4))
-		.update
-			display: inline-block
-		.view span
-			display: none	
 
+.card-wrapper
+	position: relative
+	width: 100%
+	min-height: 200px
+	background: #FFF
+	padding: 15px
+	border: 1px solid black(.15)
+	+box-shadow(0 1px 2px black(.2))
+	+clearfix()
 
 .card-editor
-	.query, .answers
-		min-height: 200px
-		background: #FFF
-		border: 1px solid black(.15)
-		+box-shadow(0 1px 2px black(.2))
 	.query
+		display: table
 		font-size: 24px
 		line-height: 130%
+		text-align: center
+		span
+			display: table-cell
+			vertical-align: middle
 	.answer
 		position: relative
-		margin-bottom: 20px
-		padding-bottom: 20px
+		margin-bottom: 10px
+		padding-bottom: 10px
 		border-bottom: 1px solid black(.1)
 		font-size: 20px
 		line-height: 130%
@@ -45,6 +40,8 @@
 			border-bottom: none
 		.title
 			font-weight: bold
+	.add-field
+		float: right
 
 
 // Options
@@ -80,17 +77,13 @@ input
 
 .query textarea
 	min-height: 140px
+	margin-top: 30px
+
 
 // NEW CARD
 
 #new-card
 	margin-top: 20px
-	.wrapper
-		min-height: 200px
-		background: #FFF
-		padding: 15px
-		border: 1px solid black(.1)
-		+box-shadow(0 1px 2px black(.2))
 	[name="query"]
 		min-height: 120px
 		font-size: 24px
@@ -102,16 +95,16 @@ input
 		color: #BBB
 
 
-// CARD EDIT Mode
-
-.view .answer i,
-.view .save,
-.editing .edit
+// Edit Mode
+.edit-mode
 	display: none
 
-.view .query,
-.view .content,
-.editing .view .save,
-.editing .view .remove-answer
-	display: inline-block
-
+.editing
+	.card-wrapper
+		+box-shadow(0 1px 10px black(.4))
+	.view-mode
+		display: none
+	.edit-mode
+		display: inline-block
+	span, .query span
+		display: none
