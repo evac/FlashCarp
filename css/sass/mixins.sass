@@ -10,8 +10,36 @@ $default_font: Helvetica, Arial, sans-serif
 @function white($opacity)
 	@return rgba(255,255,255,$opacity)
 
+// Clearfix
+=clearfix()
+	&:before, &:after
+		content: ""
+		display: table
+	&:after
+		clear: both
 
-// Vendors
+// Opacity
+=opacity($opacity)
+	opacity: $opacity
+	filter: alpha(opacity=$opacity*100)
+
+
+// Responsive Breakpoints
+=breakpoint($point)
+	@if $point == large
+		@media (min-width: 64.375em)
+			@content
+
+	@else if $point == medium
+		@media (min-width: 50em)
+			@content
+
+	@else if $point == small
+		@media (min-width: 37.5em) 
+			@content
+
+
+// Vendor Prefixes
 
 =prefix($property, $args...)
 	-webkit-#{$property}: $args
