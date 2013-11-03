@@ -20,14 +20,8 @@ define(function(require){
 			this.set(this.defaults);
 		},
 
-		active: function(arg){
-			var toggle = this.get("active");
-			if (toggle) {
-				var val = !toggle;
-				this.set("active", val);
-			} else {
-				this.set("active", arg);
-			}
+		active: function(value){
+			this.set("active", value);
 		},
 
 	});

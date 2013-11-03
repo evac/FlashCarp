@@ -16,7 +16,8 @@ define(['require', 'router', 'views/cardview', 'bootstrap'], function(require, R
 			"click #delete-set": "clearAll",
 			"click .remove-answer": "removeAnswer",
 			"keydown .answers .answer:last-child [name='answer']": "newAnswer",
-			"click #test-set": "testSet",
+			"click .add-field": "newAnswer",
+			"click #review-set": "reviewSet",
 			"click .demo-set": "demoSet"
 		},
 
@@ -38,8 +39,8 @@ define(['require', 'router', 'views/cardview', 'bootstrap'], function(require, R
 			return this;
 		},
 
-		testSet: function() {
-			Backbone.history.navigate("test", {trigger: true});
+		reviewSet: function() {
+			Backbone.history.navigate("review", {trigger: true});
 		},
 
 		// Add a single card item to the list by creating a view for it, and
@@ -55,10 +56,13 @@ define(['require', 'router', 'views/cardview', 'bootstrap'], function(require, R
 		},
 
 		newAnswer: function(e) {
-			if (e.keyCode == 9) {
+			if (e.type === "click" || e.keyCode === 9) {
 				var inputs = this.editorFieldTemplate();
-				this.$("#new-card .answers").append(inputs);
-				if ($(e.target).closest("#new-card").length) {
+				var parent = this.$(e.target).closest(".card-wrapper").children(".answers");
+
+				parent.append(inputs);
+
+				if (parent.is("#new-card")) {
 					$("html, body").animate({ scrollTop: $(document).height() }, "slow");
 				}
 			}
