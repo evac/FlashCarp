@@ -1,0 +1,117 @@
+// Card Set
+
+#cardset
+	padding: 0
+	list-style: none
+	li
+		position: relative
+		margin: 5px
+		padding: 15px
+		.view label
+			word-break: break-word
+		.update
+			display: none
+	.editing
+		border-bottom: none
+		margin-top: -1px
+		padding: 0
+		&:last-child
+			margin-bottom: -1px
+		.query, .answers
+			+prefix('box-shadow', 0 1px 10px black(.4))
+		.update
+			display: inline-block
+		.view span
+			display: none	
+
+
+.card-editor
+	.query, .answers
+		min-height: 200px
+		background: #FFF
+		border: 1px solid black(.15)
+		+prefix('box-shadow', 0 1px 2px black(.2))
+	.query
+		font-size: 24px
+		line-height: 130%
+	.answer
+		position: relative
+		margin-bottom: 20px
+		padding-bottom: 20px
+		border-bottom: 1px solid black(.1)
+		font-size: 20px
+		line-height: 130%
+		&:last-child
+			border-bottom: none
+		.title
+			font-weight: bold
+
+
+// Options
+
+.actions
+	position: absolute
+	top: 10px
+	right: 10px
+
+.save
+	i
+		color: #8BC081
+	&:hover i
+		color: #71B664
+
+// Inputs
+
+textarea, input
+	width: 100%
+	padding: 10px
+	border: 1px solid black(.2)
+	border-radius: 3px
+	line-height: 130%
+	font-size: 20px
+	font-weight: 300
+	color: #888
+	+prefix('box-shadow', inset 0 1px 2px black(.15))
+
+input
+	width: 50%
+	padding: 5px 10px
+	margin-bottom: 10px
+
+.query textarea
+	min-height: 140px
+
+// NEW CARD
+
+#new-card
+	margin-top: 20px
+	.wrapper
+		min-height: 200px
+		background: #FFF
+		padding: 15px
+		border: 1px solid black(.1)
+		+prefix('box-shadow', 0 1px 2px black(.2))
+	[name="query"]
+		min-height: 120px
+		font-size: 24px
+	i
+		top: 0
+		right: 0
+		font-size: 24px
+		cursor: default
+		color: #BBB
+
+
+// CARD EDIT Mode
+
+.view .answer i,
+.view .save,
+.editing .edit
+	display: none
+
+.view .query,
+.view .content,
+.editing .view .save,
+.editing .view .remove-answer
+	display: inline-block
+

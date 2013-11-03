@@ -1,0 +1,97 @@
+// CARD REVIEW
+
+.card
+	display: none
+	position: relative
+	width: 100%
+	height: 300px
+	margin: 40px 0
+	background: #FFF
+	text-align: center
+	letter-spacing: 1px
+	+prefix('box-shadow', 0 1px 2px black(.2))
+	+prefix('perspective', 1300px)
+	+prefix('backface-visibility', hidden)
+	span
+		font-size: 24px
+
+
+.front, .backface
+	z-index: 100
+	position: absolute
+	top: 50%
+	width: 100%
+	height: 50%
+	background: #DDD
+	+prefix('transform-style', preserve-3d)
+	+prefix('transform-origin', center top)
+	+prefix('transform', rotateX(0deg))
+	+transition-property()
+	+prefix('transition', .4s ease-out)
+
+.front
+	+prefix('backface-visibility', hidden)
+	.title
+		padding: 2px 10px
+		border-radius: 3px
+		border: 2px solid #CCC
+		background: white(.5)
+		color: #888
+		cursor: pointer
+		&:hover
+			background: white(.8)
+			color: #777
+
+.backface
+	z-index: 99
+
+.reveal .front, .reveal .backface
+	+prefix('transform', rotateX(180deg))
+	+prefix('transition', .4s ease-out)
+
+.query
+	height: 50%
+	margin: 0
+	padding-top: 40px
+	text-align: center
+
+.titles
+	position: relative
+	height: 100%
+	padding-top: 50px
+
+.title, .title:hover
+	+prefix('transition', all .15s ease)
+
+.active .card
+	display: block
+
+// Back
+.back
+	position: absolute
+	left: 0
+	bottom: 0
+	width: 100%
+	height: 50%
+	padding-top: 40px
+	background: #FFF
+	+prefix('transition-delay', 5s)
+	&.answer
+		z-index: 10
+
+.btn.main
+	display: block
+	margin: 20px auto 0
+
+
+// Next Button
+.next
+	width: 200px
+	padding: 10px
+
+
+// End
+
+.end .card
+	padding-top: 60px
+	font-size: 24px

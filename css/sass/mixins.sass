@@ -1,0 +1,27 @@
+// Colors
+
+@function black($opacity)
+	@return rgba(0,0,0,$opacity)
+
+@function white($opacity)
+	@return rgba(255,255,255,$opacity)
+
+
+// Vendors
+
+=prefix($prop, $args...)
+	-webkit-#{$prop}: $args
+	-moz-#{$prop}: $args
+	-ms-#{$prop}: $args
+	-o-#{$prop}: $args
+	#{$prop}: $args
+
+
+=transition-property()
+	-webkit-transition-property: -webkit-transform
+	-moz-transition-property: -moz-transform
+	transition-property: transform
+
+=user-select($args...)
+	-webkit-touch-callout: $args
+	+prefix('user-select', $args)
