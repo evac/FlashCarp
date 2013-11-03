@@ -1,4 +1,4 @@
-define(['require', 'views/EditorView', 'views/TestView', 'collections/cards'], function(require, EditorView, TestView, CardSet){
+define(['require', 'views/EditorView', 'views/ReviewView', 'collections/cards'], function(require, EditorView, ReviewView, CardSet){
 	"use strict";
 
 	var $ = require('jquery'),
@@ -7,7 +7,7 @@ define(['require', 'views/EditorView', 'views/TestView', 'collections/cards'], f
 	var Router = Backbone.Router.extend({
 		routes: {
 			"": "index",
-			"test": "test",
+			"review": "review",
 		},
 
 		initialize: function(){
@@ -19,8 +19,8 @@ define(['require', 'views/EditorView', 'views/TestView', 'collections/cards'], f
 			this.loadView(new EditorView({view: "index", collection: this.Cards}));
 		},
 
-		test: function() {
-			this.loadView(new TestView({view: "test", collection: this.Cards}));
+		review: function() {
+			this.loadView(new ReviewView({view: "review", collection: this.Cards}));
 		},
 
 		loadView: function(view){
