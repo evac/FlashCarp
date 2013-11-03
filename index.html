@@ -28,7 +28,7 @@
     <div class="card-editor">
       <nav>
         <button id="delete-set" class="options btn">Clear</button>
-        <button id="test-set" class="options btn">Review</button>
+        <button id="review-set" class="options btn">Review</button>
 
         <div class="btn-group">
           <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">Demo Sets <span class="caret"></button> 
@@ -43,19 +43,22 @@
 
       <div id="new-card">
         <div class="col-md-6">
-          <div class="wrapper">
+          <div class="card-wrapper">
             <h3><i class="icon-plus"></i> Add New Card</h3>
             <textarea name="query" placeholder="Card Front"></textarea>
           </div>
         </div>
         <div class="col-md-6">
-          <ul class="answers wrapper">
-            <li class="answer">
-              <input class="update" name="label" placeholder="Label" />
-              <textarea class="update" name="answer" placeholder="Answer"></textarea>
-              <i class="remove-answer icon-remove actions"></i>
-            </li>
-          </ul>
+          <div class="card-wrapper">
+            <ul class="answers">
+              <li class="answer">
+                <input class="update" name="label" placeholder="Label" />
+                <textarea class="update" name="answer" placeholder="Answer"></textarea>
+                <i class="remove-answer icon-remove actions"></i>
+              </li>
+            </ul>
+          <button class="btn add-field">Add Answer</button>
+          </div>
         </div>
       </div>
     </div>
@@ -63,28 +66,33 @@
 
   <!-- EDITOR > CARD -->
   <script type="text/template" id="card-template">
-    <div class="view row">
-      <div class="query col-md-6">
-        <span>{{query}}</span>
-        <textarea class="update" name="query">{{query}}</textarea>
-        <div class="actions">
-          <a class="edit"><i class="icon-pencil"></i></a>
-          <a class="save"><i class="icon-ok-sign"></i></a>
-          <a class="destroy"><i class="icon-remove"></i></a>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="query card-wrapper">
+          <span>{{query}}</span>
+          <textarea class="update edit-mode" name="query">{{query}}</textarea>
+          <div class="actions">
+            <a class="edit view-mode"><i class="icon-pencil"></i></a>
+            <a class="save edit-mode"><i class="icon-ok-sign"></i></a>
+            <a class="destroy"><i class="icon-remove"></i></a>
+          </div>
         </div>
       </div>
       <div class="col-md-6">
-        <ul class="answers">
-          {{#answers}}
-          <li class="answer">
-            <span class="title">{{label}}:</span>
-            <span>{{answer}}</span>
-            <input class="update" name="label" placeholder="Label" value="{{label}}" />
-            <textarea class="update" name="answer" placeholder="Answer">{{answer}}</textarea>
-            <i class="remove-answer icon-remove actions"></i>
-          </li>
-          {{/answers}}
-        </ul>
+        <div class="card-wrapper">
+          <ul class="answers">
+            {{#answers}}
+              <li class="answer">
+                <span class="title">{{label}}:</span>
+                <span>{{answer}}</span>
+                <input class="update edit-mode" name="label" placeholder="Label" value="{{label}}" />
+                <textarea class="update edit-mode" name="answer" placeholder="Answer">{{answer}}</textarea>
+                <i class="remove-answer icon-remove actions edit-mode"></i>
+              </li>
+            {{/answers}}
+          </ul>
+          <button class="btn add-field edit-mode">Add Answer</button>
+        </div>
       </div>
     </div>
   </script>
@@ -100,7 +108,7 @@
 
 
   <!-- REVIEW -->
-  <script type="text/template" id="test-template">
+  <script type="text/template" id="review-template">
     <nav>
       <button id="edit-set" class="options btn">Edit</button>
       <div class="btn-group">
@@ -130,19 +138,21 @@
   <!-- REVIEW > CARD -->
   <script type="text/template" id="qa-template">
     <div class="card">
-      <h1 class="query">{{query}}</h1>
-      <div class="front">
-        <div class="titles">
+      <div class="center-wrap">
+        <h1 class="query center">{{query}}</h1>
+      </div>
+      <div class="front center-wrap">
+        <div class="titles center">
           {{#answers}}
           <span class="title" data-label="{{label}}" data-answer="{{answer}}">{{label}}</span>
           {{/answers}}
         </div>
       </div>
-      <div class="backface">
+      <div class="backface center-wrap">
+        <span class="title center"></span>
       </div>
-      <div class="back">
-        <span class="title"></span>
-        <span class="answer"></span>
+      <div class="back center-wrap">
+        <span class="answer center"></span>
         <button class="btn main">Back</button>
       </div>
     </div>
