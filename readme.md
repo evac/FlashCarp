@@ -6,6 +6,7 @@ A flashcard system built for a one-to-many relationship instead of the conventio
 
 
 TODO
+- Improve Editing UX
 - Add collections for cardsets
 - Add grade report and statistics for correct/incorrect answers
 - Add extra rounds for reviewing incorrect answers
