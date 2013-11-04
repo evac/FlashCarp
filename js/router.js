@@ -1,4 +1,4 @@
-define(['require', 'views/EditorView', 'views/ReviewView', 'collections/cards'], function(require, EditorView, ReviewView, CardSet){
+define(['require', 'views/editor', 'views/review', 'collections/cards'], function(require, EditorView, ReviewView, CardSet){
 	"use strict";
 
 	var $ = require('jquery'),
