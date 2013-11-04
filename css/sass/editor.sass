@@ -40,6 +40,11 @@
 			border-bottom: none
 		.title
 			font-weight: bold
+		.icon-remove
+			top: 0
+			right: 0
+			bottom: auto
+			font-size: 24px
 	.add-field
 		float: right
 
@@ -51,11 +56,14 @@
 	bottom: 10px
 	right: 10px
 
-.save
+.save, .save-card
+	background: #71B664
+	color: #FFF
+	&:hover
+		background: #63AF54
+		color: #FFF
 	i
-		color: #8BC081
-	&:hover i
-		color: #71B664
+		color: #FFF
 
 // Inputs
 
@@ -75,19 +83,15 @@ input
 	padding: 5px 10px
 	margin-bottom: 10px
 
-.query textarea
-	min-height: 140px
-	margin-top: 30px
-
+textarea[name="query"]
+	min-height: 120px
+	margin-bottom: 15px
+	font-size: 24px
 
 // NEW CARD
 
 #new-card
 	margin-top: 20px
-	[name="query"]
-		min-height: 120px
-		margin-bottom: 15px
-		font-size: 24px
 	.icon-remove
 		top: 0
 		right: 0
