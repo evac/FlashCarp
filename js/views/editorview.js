@@ -1,4 +1,4 @@
-define(['require', 'router', 'views/cardview', 'bootstrap'], function(require, Router, CardView){
+define(['require', 'router', 'views/cardview'], function(require, Router, CardView){
 	"use strict";
 
 	var $ = require('jquery'),
