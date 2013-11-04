@@ -16,7 +16,8 @@ define(['require', 'router', 'views/card'], function(require, Router, CardView){
 			"click #edit-set": "editSet",
 			"click .next": "randomCard",
 			"click .restart": "restart",
-			"click .demo-set": "demoSet"
+			"click .demo-set": "demoSet",
+			"click .dropdown-toggle": "dropdown"
 		},
 
 		initialize: function(options) {
@@ -84,6 +85,11 @@ define(['require', 'router', 'views/card'], function(require, Router, CardView){
 			var set = $(e.target).data('set');
 			this.collection.fetchDemoSet(set);
 			this.randomCard();
+		},
+
+		dropdown: function(e) {
+			var $target = this.$(e.target);
+			$target.toggleClass("active");
 		}
 
 	});

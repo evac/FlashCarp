@@ -38,14 +38,26 @@ header, nav
 	text-align: center
 
 header h1
-	margin-bottom: 20px
+	margin: 20px 10px
 	font-size: 60px
 	color: #999
 
 
-// Container
+// Common Styles
 
 #app
 	padding: 20px
 	margin-bottom: 40px
 	color: #666
+
+.dropdown-menu
+	width: 200px
+	text-align: left
+	.demo-set
+		cursor: pointer
+		padding: 5px 10px
+		&:hover
+			color: #888
+
+.dropdown-toggle.active + .dropdown-menu
+	display: block

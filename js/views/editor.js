@@ -18,7 +18,8 @@ define(['require', 'router', 'views/card'], function(require, Router, CardView){
 			"keydown .answers .answer:last-child [name='answer']": "newAnswer",
 			"click .add-field": "newAnswer",
 			"click #review-set": "reviewSet",
-			"click .demo-set": "demoSet"
+			"click .demo-set": "demoSet",
+			"click .dropdown-toggle": "dropdown"
 		},
 
 		initialize: function(options) {
@@ -113,6 +114,11 @@ define(['require', 'router', 'views/card'], function(require, Router, CardView){
 		demoSet: function(e) {
 			var set = $(e.target).data('set');
 			this.collection.fetchDemoSet(set);
+		},
+
+		dropdown: function(e) {
+			var $target = this.$(e.target);
+			$target.toggleClass("active");
 		}
 
 	});
