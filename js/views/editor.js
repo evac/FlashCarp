@@ -13,6 +13,7 @@ define(['require', 'router', 'views/card'], function(require, Router, CardView){
 
 		events: {
 			"keypress #new-card": "createOnEnter",
+			"click .save-card": "createOnEnter",
 			"click #delete-set": "clearAll",
 			"click .remove-answer": "removeAnswer",
 			"keydown .answers .answer:last-child [name='answer']": "newAnswer",
@@ -76,7 +77,7 @@ define(['require', 'router', 'views/card'], function(require, Router, CardView){
 		// If you hit return in the main input field, create new **Card** model,
 		// persisting it to *localStorage*.
 		createOnEnter: function(e) {
-			if (e.keyCode != 13) return;
+			if (e.type !== "click" && e.keyCode !== 13) return;
 
 			var queryEl = this.$card.find("[name='query']");
 			var answersEl = this.$card.find(".answers");
