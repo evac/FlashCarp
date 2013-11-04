@@ -2,13 +2,10 @@
 FlashCarp
 ===========================
 
-A variant on the conventional two-sided flashcard system.
-
+A flashcard system built for a one-to-many relationship instead of the conventional one-to-one relationship.
 
 
 TODO
-- Clean up global namespace
-- Modularize with Require.js
-- Automate with Grunt
-- Add grade report and statistics for correct/incorrect
-- Add extra rounds for reviewing incorrect answers until no incorrect
+- Add collections for cardsets
+- Add grade report and statistics for correct/incorrect answers
+- Add extra rounds for reviewing incorrect answers
