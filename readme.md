@@ -27,16 +27,32 @@ What are the first 10 amendments to the United States Constitution?
 ```
 
 
-###Review cards front and back, as well as sideway by labels.
-Each answer is labelled, whether by a simple number or with a more descriptive word like "Name" or "Year".
+###Review cards and selectively filter answer types to study.
 Example Use Case:
 ```
-Assume that you have a card set about historical events with a bunch of labelled
-information (date, location, description of event, people, historical impact).
-If you want to focus on studying just the dates and locations of all these
-historical events, then you should be able to select for the specific labels you
-want to study and filter out all others answers.
+Assume that a user has a cardset about historical events with the following type of answers:
+- date
+- location
+- description of event
+- historical impact
+
+If the user want to focus on studying just the dates and locations, then they 
+should be able to select for these specific filters and narrow their study focus.
 ```
+
+###Review cards backward from answers.
+Example Use Case:
+```
+Using the same cardset about historical events from above, let's say the user wants to study
+the name of the historical event (the front of the card) when given the location and date ( answers at the back of the card).
+
+The user should be able to toggle the type of answers (in this case, location and date) to study backward from.
+
+Q: What historical event occurred on the date **July 20, 1969** and at the location **moon**?
+A: Apollo 11 landed a man on the Moon
+
+```
+
 
 TODO
 ----
