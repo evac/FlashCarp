@@ -44,9 +44,11 @@ should be able to select for these specific filters and narrow their study focus
 Example Use Case:
 ```
 Using the same cardset about historical events from above, let's say the user wants to study
-the name of the historical event (the front of the card) when given the location and date ( answers at the back of the card).
+the name of the historical event (the front of the card) when given the location and date 
+(from the back of the card).
 
-The user should be able to toggle the type of answers (in this case, location and date) to study backward from.
+The user should be able to toggle the type of answers (in this case, location and date) to 
+study backward from.
 
 Q: What historical event occurred on the date "July 20, 1969" and at the location "Moon"?
 A: Apollo 11 landed a man on the Moon
