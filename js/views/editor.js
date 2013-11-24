@@ -6,21 +6,17 @@ define(['require', 'router', 'views/card'], function(require, Router, CardView){
 
 	var EditorView = Backbone.View.extend({
 
-		className: "app",
+		className: "editor container",
 
-		editorTemplate: Handlebars.compile($('#app-template').html()),
+		editorTemplate: Handlebars.compile($('#editor-template').html()),
 		editorFieldTemplate: Handlebars.compile($('#fields-template').html()),
 
 		events: {
 			"keypress #new-card": "createOnEnter",
 			"click .save-card": "createOnEnter",
-			"click #delete-set": "clearAll",
 			"click .remove-answer": "removeAnswer",
 			"keydown .answers .answer:last-child [name='answer']": "newAnswer",
 			"click .add-field": "newAnswer",
-			"click #review-set": "reviewSet",
-			"click .demo-set": "demoSet",
-			"click .dropdown-toggle": "dropdown"
 		},
 
 		initialize: function(options) {
@@ -39,10 +35,6 @@ define(['require', 'router', 'views/card'], function(require, Router, CardView){
 			// populate with cards
 			this.addAll();
 			return this;
-		},
-
-		reviewSet: function() {
-			Backbone.history.navigate("review", {trigger: true});
 		},
 
 		// Add a single card item to the list by creating a view for it, and
@@ -103,24 +95,6 @@ define(['require', 'router', 'views/card'], function(require, Router, CardView){
 			queryEl.val("");
 			answersEl.html(this.editorFieldTemplate());
 		},
-
-		// Clear all cards
-		clearAll: function() {
-			var card;
-			while (card = this.collection.first()) {
-				card.destroy();
-			}
-		},
-
-		demoSet: function(e) {
-			var set = $(e.target).data('set');
-			this.collection.fetchDemoSet(set);
-		},
-
-		dropdown: function(e) {
-			var $target = this.$(e.target);
-			$target.toggleClass("active");
-		}
 
 	});
 

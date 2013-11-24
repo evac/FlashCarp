@@ -1,0 +1,100 @@
+/* Header */
+
+header
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 50px
+	text-align: center
+	background: #48535A
+
+header .title
+	float: left
+	height: 100%
+	padding: 20px
+	font-size: 40px
+	color: #EEE
+	text-align: left
+	font-weight: bold
+
+
+/* Nav Menu */
+
+menu
+	float: right
+	height: 100%
+	margin: 0
+	.options
+		float: left
+		display: inline-block
+		width: 90px
+		height: 100%
+		&:hover .slide-text:before
+			height: 0
+	.slide-text
+		position: relative
+		top: 20px
+		display: inline-block
+		font-size: 22px
+		font-family: $default_heading
+		&, &:hover
+			color: #EEE
+		&:before
+			content: attr(data-hover)
+			overflow: hidden
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			color: #999
+			+transition(all .2s ease)
+
+.btn-group
+	vertical-align: top
+
+.dropdown-menu
+	display: block
+	visibility: hidden
+	opacity: 0
+	top: 60px
+	right: -20px
+	left: auto
+	width: 200px
+	margin: 0
+	padding: 0
+	border-radius: 0
+	border-bottom: 3px solid #CCC
+	text-align: left
+	+box-shadow(none)
+	+transition(all .15s ease)
+	&:before
+		content: ""
+		position: absolute
+		top: -6px
+		right: 42px
+		width: 11px
+		height: 11px
+		border: 1px solid #CCC
+		border-width: 1px 0 0 1px
+		background: #FFF
+		+transform(rotate(45deg))
+	.demo-set
+		cursor: pointer
+		padding: 8px 10px
+		border-bottom: 1px solid #DDD
+		line-height: 150%
+		color: #888
+		&:hover
+			color: #48535A
+		&:last-child
+			border-bottom: none
+
+.dropdown-toggle.active
+	&:before
+		height: 0
+	+ .dropdown-menu
+		top: 50px
+		opacity: 1
+		visibility: visible

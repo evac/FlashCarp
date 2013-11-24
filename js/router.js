@@ -1,4 +1,4 @@
-define(['require', 'views/editor', 'views/review', 'collections/cards'], function(require, EditorView, ReviewView, CardSet){
+define(['require', 'views/editor', 'views/review', 'views/header', 'collections/cards'], function(require, EditorView, ReviewView, HeaderView, CardSet){
 	"use strict";
 
 	var $ = require('jquery'),
@@ -6,7 +6,7 @@ define(['require', 'views/editor', 'views/review', 'collections/cards'], functio
 
 	var Router = Backbone.Router.extend({
 		routes: {
-			"": "index",
+			"": "editor",
 			"review": "review",
 		},
 
@@ -15,8 +15,8 @@ define(['require', 'views/editor', 'views/review', 'collections/cards'], functio
 			this.Cards.fetch();
 		},
 
-		index: function() {
-			this.loadView(new EditorView({view: "index", collection: this.Cards}));
+		editor: function() {
+			this.loadView(new EditorView({view: "editor", collection: this.Cards}));
 		},
 
 		review: function() {
@@ -26,6 +26,7 @@ define(['require', 'views/editor', 'views/review', 'collections/cards'], functio
 		loadView: function(view){
 			if (this.view) {this.view.remove();}
 			this.view = view;
+			new HeaderView({view: view.view, collection: view.collection});
 		}
 
 	});

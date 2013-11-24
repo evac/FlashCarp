@@ -1,7 +1,7 @@
 // General Styles
 
 body
-	font: 14px "Helvetica Neue", $default_font
+	font: 14px "Lato", $default_font
 	margin: 0 auto
 	line-height: 1.3em
 	background: #F4F4F4
@@ -10,8 +10,8 @@ body
 
 h1, h2, h3, h4
 	margin-top: 0
-	font-family: "Lato", "Helvetica", $default_font
-	font-weight: 300
+	font-family: $default_heading
+	font-weight: 400
 
 a, i
 	color: #BBB
@@ -32,32 +32,5 @@ ul
 	font-size: 18px
 	outline: none !important
 
-// Header
-
-header, nav
+.center
 	text-align: center
-
-header h1
-	margin: 20px 10px
-	font-size: 60px
-	color: #999
-
-
-// Common Styles
-
-#app
-	padding: 20px
-	margin-bottom: 40px
-	color: #666
-
-.dropdown-menu
-	width: 200px
-	text-align: left
-	.demo-set
-		cursor: pointer
-		padding: 5px 10px
-		&:hover
-			color: #888
-
-.dropdown-toggle.active + .dropdown-menu
-	display: block

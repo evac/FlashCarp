@@ -8,16 +8,13 @@ define(['require', 'router', 'views/card'], function(require, Router, CardView){
 
 	var ReviewView = Backbone.View.extend({
 
-		className: "review",
+		className: "review container",
 
 		template: Handlebars.compile($('#review-template').html()),
 
 		events: {
-			"click #edit-set": "editSet",
 			"click .next": "randomCard",
 			"click .restart": "restart",
-			"click .demo-set": "demoSet",
-			"click .dropdown-toggle": "dropdown"
 		},
 
 		initialize: function(options) {
@@ -26,7 +23,6 @@ define(['require', 'router', 'views/card'], function(require, Router, CardView){
 			$("#app").html(this.el);
 			this.listenTo(this.collection, "reset", this.render);
 			this.render();
-			this.randomCard();
 		},
 
 		// Re-render the querys of the card item.
@@ -35,6 +31,7 @@ define(['require', 'router', 'views/card'], function(require, Router, CardView){
 			this.remaining = Array(this.collection.length).join().split(',').map(function(a){return this.i++;},{i:0});
 			this.$el.html(this.template());
 			this.addAll();
+			this.randomCard();
 
 			return this;
 		},
@@ -62,8 +59,10 @@ define(['require', 'router', 'views/card'], function(require, Router, CardView){
 				this.remaining.splice(randint, 1);
 				card.active(true);
 				this.primary = card;
-			} else {
+			} else if (this.collection.length) {
 				this.$('.end .card').show();
+			} else {
+				this.$('.empty .card').show();
 			}
 		},
 
@@ -76,21 +75,6 @@ define(['require', 'router', 'views/card'], function(require, Router, CardView){
 		nextCard: function(){
 			this.randomCard();
 		},
-
-		editSet: function() {
-			Backbone.history.navigate("", {trigger: true});
-		},
-
-		demoSet: function(e) {
-			var set = $(e.target).data('set');
-			this.collection.fetchDemoSet(set);
-			this.randomCard();
-		},
-
-		dropdown: function(e) {
-			var $target = this.$(e.target);
-			$target.toggleClass("active");
-		}
 
 	});
 

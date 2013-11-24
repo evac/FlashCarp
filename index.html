@@ -7,57 +7,79 @@
 
   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
   <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-  <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato|Nunito:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/main.css"/>
 </head>
 
 <body>
-  <header class="center">
-    <h1>FlashCarp</h1>
-  </header>
-
-  <div id="app" class="container">
+  <div id="app">
   </div>
 
   <!-- SCRIPTS -->
+  <!--
   <script src="js/main.min.js"></script>
+-->
   <script data-main="js/main" src="js/require.js"></script>
 
+  <!-- HEADER -->
+  <script type="text/template" id="header-template">
+    <a href="#" class="title">FlashCarp</a>
+    <menu>
+    </menu>
+  </script>
+
+  <!-- HEADER EDITOR OPTIONS-->
+  <script type="text/template" id="editor-nav-template">
+    <a class="options">
+      <span id="delete-set" class="slide-text" data-hover="Clear">Clear</span>
+    </a>
+    <a class="options">
+      <span id="review-set" class="slide-text" data-hover="Review">Review</span>
+    </a>
+  </script>
+
+  <!-- HEADER REVIEW OPTIONS -->
+  <script type="text/template" id="review-nav-template">
+    <a class="options">
+      <span id="edit-set" class="slide-text" data-hover="Edit">Edit</span>
+    </a>
+  </script>
+
+  <!-- HEADER DEMO OPTIONS -->
+  <script type="text/template" id="demo-nav-template">
+    <a class="options">
+      <div class="btn-group">
+        <span class="dropdown-toggle slide-text" data-toggle="dropdown" data-hover="Demo">Demo</span>
+        <ul class="dropdown-menu" role="menu">
+          <li role="presentation" class="demo-set" data-set="scientists">Famous Scientists</li>
+          <li role="presentation" class="demo-set" data-set="periodictable">Periodic Table</li>
+        </ul>
+      </div>
+    </a>
+  </script>
+
+
   <!-- EDITOR -->
-  <script type="text/template" id="app-template">
-    <div class="card-editor">
-      <nav>
-        <button id="delete-set" class="options btn">Clear Cards</button>
-        <button id="review-set" class="options btn">Review Cards</button>
+  <script type="text/template" id="editor-template">
+    <ul id="cardset"></ul>
 
-        <div class="btn-group">
-          <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">Demo Sets <span class="caret"></button> 
-          <ul class="dropdown-menu" role="menu">
-            <li role="presentation" class="demo-set" data-set="scientists">Famous Scientists</li>
-            <li role="presentation" class="demo-set" data-set="periodictable">Periodic Table</li>
+    <div id="new-card">
+      <div class="col-md-6">
+        <div class="card-wrapper">
+          <textarea name="query" placeholder="Card Front"></textarea>
+          <button class="btn save-card"><i class="icon-plus"></i> Add Card</button>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card-wrapper">
+          <ul class="answers">
+            <li class="answer">
+              <input class="update" name="label" placeholder="Label" />
+              <textarea class="update" name="answer" placeholder="Answer"></textarea>
+              <i class="remove-answer icon-remove actions"></i>
+            </li>
           </ul>
-        </div>
-      </nav>
-      <ul id="cardset"></ul>
-
-      <div id="new-card">
-        <div class="col-md-6">
-          <div class="card-wrapper">
-            <textarea name="query" placeholder="Card Front"></textarea>
-            <button class="btn save-card"><i class="icon-plus"></i> Add Card</button>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card-wrapper">
-            <ul class="answers">
-              <li class="answer">
-                <input class="update" name="label" placeholder="Label" />
-                <textarea class="update" name="answer" placeholder="Answer"></textarea>
-                <i class="remove-answer icon-remove actions"></i>
-              </li>
-            </ul>
-          <button class="btn add-field">New Answer</button>
-          </div>
+        <button class="btn add-field">New Answer</button>
         </div>
       </div>
     </div>
@@ -110,20 +132,10 @@
 
   <!-- REVIEW -->
   <script type="text/template" id="review-template">
-    <nav>
-      <button id="edit-set" class="options btn">Edit Cards</button>
-      <div class="btn-group">
-        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">Demo Sets <span class="caret"></button> 
-        <ul class="dropdown-menu" role="menu">
-          <li role="presentation" class="demo-set" data-set="scientists">Famous Scientists</li>
-          <li role="presentation" class="demo-set" data-set="periodictable">Periodic Table</li>
-        </ul>
-      </div>
-    </nav>
     <div class="row">
       <ul id="cardreview" class="col-md-8 col-md-offset-2">
       </ul>
-      <div class="end col-md-8 col-md-offset-2">
+      <div class="end col-md-6 col-md-offset-3">
         <div class="card">
           <p>Done!</p>
           <p>Would you like to try again?</p>
@@ -131,8 +143,16 @@
           <button class="restart btn">Yes, go another round.</button>
         </div>
       </div>
+      <div class="empty col-md-6 col-md-offset-3">
+        <div class="card">
+          <p>Uh oh, there is nothing to review!</p>
+          <p>Would you like to add some cards?</p>
+          <br />
+          <a href="#" class="btn">Sure.</a>
+        </div>
+      </div>
     </div>
-    <nav><button class="next options btn">Next Card</button></nav>
+    <nav class="center"><button class="next options btn">Next Card</button></nav>
   </script>
 
   <!-- REVIEW > CARD -->
@@ -153,7 +173,7 @@
       </div>
       <div class="back center-wrap">
         <span class="answer center"></span>
-        <button class="btn main">Back</button>
+        <button class="btn main">Done</button>
       </div>
     </div>
   </script>
