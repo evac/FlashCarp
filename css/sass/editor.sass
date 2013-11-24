@@ -11,24 +11,29 @@
 			word-break: break-word
 
 .card-wrapper
-	position: relative
-	width: 100%
-	min-height: 200px
-	background: #FFF
-	padding: 15px
-	border: 1px solid black(.15)
-	+box-shadow(0 1px 2px black(.2))
-	+clearfix()
+	padding: 0
+	.card-side
+		position: relative
+		width: 100%
+		background: #FFF
+		padding: 15px
+		border: 1px solid #CCC
+		+clearfix()
+		&:last-child
+			background: #EEE
+			border-top: none
 
 .editor
 	.query
 		display: table
+		border-radius: 4px 4px 0 0
 		font-size: 24px
 		line-height: 130%
 		text-align: center
 		span
 			display: table-cell
 			vertical-align: middle
+			padding: 0 50px
 	.answer
 		position: relative
 		margin-bottom: 10px
@@ -36,6 +41,7 @@
 		border-bottom: 1px solid black(.1)
 		font-size: 20px
 		line-height: 130%
+		color: #888
 		&:last-child
 			border-bottom: none
 		.title
@@ -53,10 +59,10 @@
 
 .actions
 	position: absolute
-	bottom: 10px
+	top: 10px
 	right: 10px
 
-.save, .save-card
+.save, .add-card
 	background: #71B664
 	color: #FFF
 	&:hover, &:focus
@@ -64,6 +70,12 @@
 		color: #FFF
 	i
 		color: #FFF
+
+.cancel
+	display: inline-block
+	margin: 0 10px
+	font-size: 20px
+
 
 // Inputs
 
@@ -96,9 +108,10 @@ textarea[name="query"]
 		top: 0
 		right: 0
 		font-size: 24px
-		cursor: default
 		color: #BBB
-	.save-card
+		&:hover
+			color: #999
+	.add-card
 		float: right
 	.icon-plus
 		color: inherit
@@ -107,9 +120,10 @@ textarea[name="query"]
 .edit-mode
 	display: none
 
-.editing
+.editing, #new-card
 	.card-wrapper
-		+box-shadow(0 1px 10px black(.4))
+		border: 5px solid #E8E8E8
+		border-radius: 4px
 	.view-mode
 		display: none
 	.edit-mode

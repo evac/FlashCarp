@@ -1,7 +1,7 @@
 // General Styles
 
 body
-	font: 14px "Lato", $default_font
+	font: 16px "Lato", $default_font
 	margin: 0 auto
 	line-height: 1.3em
 	background: #F4F4F4
@@ -15,9 +15,9 @@ h1, h2, h3, h4
 
 a, i
 	color: #BBB
+	cursor: pointer
 	&:hover
 		color: #999
-		cursor: pointer
 		text-decoration: none
 
 ul
@@ -25,12 +25,25 @@ ul
 	padding: 0
 	list-style: none
 
+textarea
+	resize: none
+
 .btn
 	background: #DDD
 	color: #666
 	border-radius: 2px
 	font-size: 18px
 	outline: none !important
+
+.btn-link
+	padding: 0
+	background: none
+	color: #AAA
+	border-bottom: 2px dotted #BBB
+	&:hover, &:focus
+		color: #888
+		border-bottom: 2px dotted #999
+		text-decoration: none
 
 .center
 	text-align: center

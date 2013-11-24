@@ -16,7 +16,8 @@ define(function(require){
 		// The DOM events specific to an item.
 		events: {
 			"click .edit": "edit",
-			"click .save": "close",
+			"click .save": "save",
+			"click .cancel": "cancel",
 			"click a.destroy": "clear",
 			"click .front .title": "reveal",
 			"click .main": "hide",
@@ -56,7 +57,7 @@ define(function(require){
 		},
 
 		// Close the `"editing"` mode, saving changes to the card.
-		close: function(e) {
+		save: function(e) {
 			var query = this.query.val();
 			var answerList = this.answers.children();
 			var answers = [];
@@ -77,8 +78,12 @@ define(function(require){
 					query: query,
 					answers: answers
 				});
-				this.$el.removeClass("editing");
+				this.cancel();
 			}
+		},
+
+		cancel: function() {
+			this.$el.removeClass("editing");
 		},
 
 		active: function() {

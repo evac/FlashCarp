@@ -13,7 +13,7 @@ define(['require', 'router', 'views/card'], function(require, Router, CardView){
 
 		events: {
 			"keypress #new-card": "createOnEnter",
-			"click .save-card": "createOnEnter",
+			"click .add-card": "createOnEnter",
 			"click .remove-answer": "removeAnswer",
 			"keydown .answers .answer:last-child [name='answer']": "newAnswer",
 			"click .add-field": "newAnswer",
@@ -52,7 +52,7 @@ define(['require', 'router', 'views/card'], function(require, Router, CardView){
 		newAnswer: function(e) {
 			if (e.type === "click" || e.keyCode === 9) {
 				var inputs = this.editorFieldTemplate();
-				var parent = this.$(e.target).closest(".card-wrapper").children(".answers");
+				var parent = this.$(e.target).closest(".card-side").children(".answers");
 
 				parent.append(inputs);
 
