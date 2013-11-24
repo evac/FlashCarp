@@ -30,14 +30,13 @@ What are the first 10 amendments to the United States Constitution?
 ###Review cards front and back, as well as sideway by labels.
 Each answer is labelled, whether by a simple number or with a more descriptive word like "Name" or "Year".
 Example Use Case:
-'''
+```
 Assume that you have a card set about historical events with a bunch of labelled
 information (date, location, description of event, people, historical impact).
 If you want to focus on studying just the dates and locations of all these
 historical events, then you should be able to select for the specific labels you
 want to study and filter out all others answers.
-'''
-
+```
 
 TODO
 ----
