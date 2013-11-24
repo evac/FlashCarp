@@ -2,7 +2,7 @@
 FlashCarp
 ===========================
 
-A proof-of-concept project to explore a flashcard system for knowledge that are more complex than a single answer to a single question.
+A proof-of-concept flashcard system to explore new ways of studying knowledge that are more complex than a single answer to a single question.
 
 *Still in progress!*
 
