@@ -8,7 +8,7 @@ A proof-of-concept project to explore a flashcard system for knowledge that are 
 
 Features
 --------
-###Add multiple answers to one topic/question.
+####Add multiple answers to one topic/question.
 Example Use Case:
 ```
 What are the first 10 amendments to the United States Constitution?
@@ -27,7 +27,7 @@ What are the first 10 amendments to the United States Constitution?
 ```
 
 
-###Review cards and selectively filter answer types to study.
+####Review cards and selectively filter answer types to study.
 Example Use Case:
 ```
 Assume that a user has a cardset about historical events with the following type of answers:
@@ -40,7 +40,7 @@ If the user want to focus on studying just the dates and locations, then they
 should be able to select for these specific filters and narrow their study focus.
 ```
 
-###Review cards backward from answers.
+####Review cards backward from answers.
 Example Use Case:
 ```
 Using the same cardset about historical events from above, let's say the user wants to study
