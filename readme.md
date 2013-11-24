@@ -48,7 +48,7 @@ the name of the historical event (the front of the card) when given the location
 
 The user should be able to toggle the type of answers (in this case, location and date) to study backward from.
 
-Q: What historical event occurred on the date **July 20, 1969** and at the location **moon**?
+Q: What historical event occurred on the date "July 20, 1969" and at the location "Moon"?
 A: Apollo 11 landed a man on the Moon
 
 ```
