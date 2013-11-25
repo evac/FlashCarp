@@ -27,6 +27,7 @@ define(function(require){
 		render: function() {
 			if (this.view === "editor"){
 				this.$el.html(this.editorSidebar({labels: this.labels}));
+				if (this.labels.length) {this.$el.find(".title").hide();}
 			} else {
 				this.$el.html(this.reviewSidebar());
 			}
@@ -45,7 +46,8 @@ define(function(require){
 		addDefaultLabel: function(e){
 			if (e.type !== "click" && e.keyCode !== 13) return;
 
-			var label = this.$el.find(".default").val();
+			var $input = this.$el.find(".default");
+			var label = $input.val();
 
 			if (label && this.labels.indexOf(label) === -1) {
 				this.labels.push(label);
@@ -56,6 +58,7 @@ define(function(require){
 
 				this.render();
 				Backbone.Events.trigger("change:labels");
+				$(".default").focus(); // refocus
 			}
 		},
 
