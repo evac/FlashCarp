@@ -11,7 +11,6 @@ define(function(require){
 
 		cardTemplate: Handlebars.compile($('#card-template').html()),
 		reviewTemplate: Handlebars.compile($('#qa-template').html()),
-		fieldTemplate: Handlebars.compile($('#fields-template').html()),
 
 		// The DOM events specific to an item.
 		events: {
@@ -20,7 +19,7 @@ define(function(require){
 			"click .cancel": "cancel",
 			"click a.destroy": "clear",
 			"click .front .title": "reveal",
-			"click .main": "hide",
+			"click .done": "hide",
 		},
 
 		// listen for changes to model 
@@ -28,6 +27,7 @@ define(function(require){
 			this.view = options.view;
 			this.listenTo(this.model, 'change', this.render);
 			this.listenTo(this.model, 'change:active', this.active);
+			this.listenTo(this.model, 'save', this.render);
 			this.listenTo(this.model, 'destroy', this.remove);
 			if (this.view === "review") {
 				this.model.active(false); // reset model activeness
@@ -45,9 +45,11 @@ define(function(require){
 			}
 
 			this.$el.html(template);
-			this.query = this.$('.update[name="query"]');
-			this.answers = this.$('.answers');
-			this.back = this.$('.back');
+			this.$query = this.$('.update[name="query"]');
+			this.$answers = this.$('.answers');
+			this.$back = this.$('.back');
+			this.answers = this.model.get("answers");
+
 			return this;
 		},
 
@@ -58,8 +60,8 @@ define(function(require){
 
 		// Close the `"editing"` mode, saving changes to the card.
 		save: function(e) {
-			var query = this.query.val();
-			var answerList = this.answers.children();
+			var query = this.$query.val();
+			var answerList = this.$answers.children();
 			var answers = [];
 
 			answerList.each(function(i) {
@@ -99,7 +101,7 @@ define(function(require){
 			var label = $target.data("label");
 			var answer = $target.data("answer");
 			this.$(".backface").children(".title").text(label);
-			this.back.children(".answer").text(answer);
+			this.$back.children(".answer").text(answer);
 			$(".active").addClass("reveal");
 		},
 

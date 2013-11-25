@@ -24,6 +24,24 @@ define(function(require){
 			this.set("active", value);
 		},
 
+		addLabel: function(label) {
+			var answers = this.get("answers");
+			if (answers.indexOf(label) === -1) {
+				answers.push({label: label, answer: "?"});
+				this.set("answers", answers);
+				this.trigger("change");
+			}
+		},
+
+		removeLabel: function(label) {
+			var answers = this.get("answers");
+			answers = _.filter(answers, function(answer){
+				return answer.label !== this.label;
+			}, {label: label});
+			this.set("answers", answers);
+			this.trigger("change");
+		}
+
 	});
 
 	return Card;

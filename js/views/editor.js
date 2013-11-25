@@ -1,4 +1,4 @@
-define(['require', 'router', 'views/card'], function(require, Router, CardView){
+define(['require', 'router', 'views/card', 'views/sidebar'], function(require, Router, CardView, SidebarView){
 	"use strict";
 
 	var $ = require('jquery'),
@@ -9,28 +9,36 @@ define(['require', 'router', 'views/card'], function(require, Router, CardView){
 		className: "editor container",
 
 		editorTemplate: Handlebars.compile($('#editor-template').html()),
-		editorFieldTemplate: Handlebars.compile($('#fields-template').html()),
 
 		events: {
 			"keypress #new-card": "createOnEnter",
 			"click .add-card": "createOnEnter",
 			"click .remove-answer": "removeAnswer",
 			"keydown .answers .answer:last-child [name='answer']": "newAnswer",
-			"click .add-field": "newAnswer",
+			"click .add-field": "newAnswer"
 		},
 
 		initialize: function(options) {
-			$("#app").html(this.el);
 			this.view = options.view;
+
+			$("#app").html(this.el);
+
+			Backbone.Events.on("change:labels", this.render, this);
 			this.listenTo(this.collection, 'add', this.addOne);
 			this.listenTo(this.collection, 'reset', this.render);
 			this.render();
 		},
 
-		render: function() {
-			// render template
-			this.$el.html(this.editorTemplate());
-			this.$card = $("#new-card");
+		render: function(){
+			this.defaultLabels = JSON.parse(localStorage.getItem("labels")).map(function(val){return {label: val};});
+			this.answerFields = this.defaultLabels.length ? this.defaultLabels : [{label: ""}];
+
+			// render editor view
+			this.$el.html(this.editorTemplate({answers: this.answerFields}));
+
+			// render sidebar view
+			var sidebar = new SidebarView({view: this.view, collection: this.collection});
+			this.$el.find("#sidebar").html(sidebar.el);
 
 			// populate with cards
 			this.addAll();
@@ -38,31 +46,24 @@ define(['require', 'router', 'views/card'], function(require, Router, CardView){
 		},
 
 		// Add a single card item to the list by creating a view for it, and
-		// appending its element to the `<ul>`.
 		addOne: function(card) {
 			var view = new CardView({model: card, view: this.view});
 			this.$("#cardset").append(view.render().el);
 		},
 
 		// Add all items in the collection at once.
-		addAll: function() {
+		addAll: function(){
 			this.collection.each(this.addOne, this);
 		},
 
-		newAnswer: function(e) {
+		newAnswer: function(e){
 			if (e.type === "click" || e.keyCode === 9) {
-				var inputs = this.editorFieldTemplate();
-				var parent = this.$(e.target).closest(".card-side").children(".answers");
-
-				parent.append(inputs);
-
-				if (parent.is("#new-card")) {
-					$("html, body").animate({ scrollTop: $(document).height() }, "slow");
-				}
+				this.answerFields.push({label: ""});
+				this.render();
 			}
 		},
 
-		removeAnswer: function(e) {
+		removeAnswer: function(e){
 			$(e.target).parent().remove();
 		},
 
@@ -71,8 +72,9 @@ define(['require', 'router', 'views/card'], function(require, Router, CardView){
 		createOnEnter: function(e) {
 			if (e.type !== "click" && e.keyCode !== 13) return;
 
-			var queryEl = this.$card.find("[name='query']");
-			var answersEl = this.$card.find(".answers");
+			var $card = $("#new-card");
+			var queryEl = $card.find("[name='query']");
+			var answersEl = $card.find(".answers");
 			var query = queryEl.val();
 			var answerList = answersEl.children();
 			var answers = [];
@@ -87,13 +89,11 @@ define(['require', 'router', 'views/card'], function(require, Router, CardView){
 				}
 			});
 
-			if (!query || !answers) return;
+			if (!query || !answers) return; // return error if required fields are missing
 
-			this.collection.create({query: query, answers: answers});
+			this.collection.create({query: query, answers: answers}); // save new card
 
-			// Reset form
-			queryEl.val("");
-			answersEl.html(this.editorFieldTemplate());
+			this.render(); // reset form
 		},
 
 	});

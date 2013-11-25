@@ -1,10 +1,9 @@
-define(['require', 'router', 'views/card'], function(require, Router, CardView){
+define(['require', 'router', 'views/card', 'views/sidebar'], function(require, Router, CardView, SidebarView){
 	"use strict";
 
 	var $ = require('jquery'),
 			_ = require('underscore'),
-			Backbone = require('backbone'),
-			Handlebars = require('handlebars');
+			Backbone = require('backbone');
 
 	var ReviewView = Backbone.View.extend({
 
@@ -20,7 +19,9 @@ define(['require', 'router', 'views/card'], function(require, Router, CardView){
 		initialize: function(options) {
 			this.view = options.view;
 
+			// Build review view & add sidebar view
 			$("#app").html(this.el);
+
 			this.listenTo(this.collection, "reset", this.render);
 			this.render();
 		},
@@ -30,6 +31,11 @@ define(['require', 'router', 'views/card'], function(require, Router, CardView){
 			// create array of card indexes
 			this.remaining = Array(this.collection.length).join().split(',').map(function(a){return this.i++;},{i:0});
 			this.$el.html(this.template());
+
+			// render sidebar view
+			var sidebar = new SidebarView({view: this.view, collection: this.collection});
+			this.$el.find("#sidebar").html(sidebar.el);
+
 			this.addAll();
 			this.randomCard();
 
@@ -59,15 +65,19 @@ define(['require', 'router', 'views/card'], function(require, Router, CardView){
 				this.remaining.splice(randint, 1);
 				card.active(true);
 				this.primary = card;
-			} else if (this.collection.length) {
-				this.$('.end .card').show();
 			} else {
-				this.$('.empty .card').show();
+				if (this.collection.length) {
+					this.$('.end .card').show();
+				} else {
+					this.$('.empty .card').show();
+				}
+				this.$('.next').hide();
 			}
 		},
 
 		restart: function(){
 			this.$('.end .card').hide();
+			this.$('.next').show();
 			this.remaining = Array(this.collection.length).join().split(',').map(function(a){return this.i++;},{i:0});
 			this.randomCard();
 		},

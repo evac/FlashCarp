@@ -17,7 +17,6 @@ define(function(require){
 		events: {
 			"click #edit-set": "editSet",
 			"click #review-set": "reviewSet",
-			"click #delete-set": "clearAll",
 			"click .demo-set": "demoSet",
 			"click .dropdown-toggle": "dropdown"
 		},
@@ -49,14 +48,6 @@ define(function(require){
 
 		reviewSet: function() {
 			Backbone.history.navigate("review", {trigger: true});
-		},
-
-		// Clear all cards
-		clearAll: function() {
-			var card;
-			while (card = this.collection.first()) {
-				card.destroy();
-			}
 		},
 
 		demoSet: function(e) {
