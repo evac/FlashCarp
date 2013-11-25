@@ -30,24 +30,21 @@
 
   <!-- HEADER EDITOR OPTIONS-->
   <script type="text/template" id="editor-nav-template">
-    <a class="options">
-      <span id="delete-set" class="slide-text" data-hover="Clear">Clear</span>
-    </a>
-    <a class="options">
+    <a class="link">
       <span id="review-set" class="slide-text" data-hover="Review">Review</span>
     </a>
   </script>
 
   <!-- HEADER REVIEW OPTIONS -->
   <script type="text/template" id="review-nav-template">
-    <a class="options">
+    <a class="link">
       <span id="edit-set" class="slide-text" data-hover="Edit">Edit</span>
     </a>
   </script>
 
   <!-- HEADER DEMO OPTIONS -->
   <script type="text/template" id="demo-nav-template">
-    <a class="options">
+    <a class="link">
       <div class="btn-group">
         <span class="dropdown-toggle slide-text" data-toggle="dropdown" data-hover="Demo">Demo</span>
         <ul class="dropdown-menu" role="menu">
@@ -61,47 +58,86 @@
 
   <!-- EDITOR -->
   <script type="text/template" id="editor-template">
-    <ul id="cardset"></ul>
+    <div class="row">
 
-    <div id="new-card">
-      <div class="card-wrapper col-md-6 col-md-offset-3">
-        <div class="card-side">
-          <textarea name="query" placeholder="Question or Topic"></textarea>
-          <button class="btn add-card"><i class="icon-plus"></i> Add Card</button>
-        </div>
-        <div class="card-side">
-          <ul class="answers">
-            <li class="answer">
-              <input class="update" name="label" placeholder="Label" />
-              <textarea class="update" name="answer" placeholder="Answer"></textarea>
-              <i class="remove-answer icon-remove actions"></i>
-            </li>
-          </ul>
-        <button class="btn add-field btn-link">Add New Answer</button>
+      <div id="sidebar" class="col-md-3"></div>
+      <div class="col-md-6 col-md-offset-4">
+        <ul id="cardset"></ul>
+
+        <!-- New Card -->
+        <div id="new-card">
+          <div class="card-wrapper">
+
+            <!-- Card Front -->
+            <div class="card-side">
+              <textarea name="query" placeholder="Question or Topic"></textarea>
+            </div>
+
+            <!-- Card Answers -->
+            <div class="card-side bottom">
+              <ul class="answers">
+                {{#each answers}}
+                  <li class="answer">
+                    <input class="update" name="label" placeholder="Label" value="{{label}}" />
+                    <textarea class="update" name="answer" placeholder="Answer"></textarea>
+                    <i class="remove-answer icon-remove actions"></i>
+                  </li>
+                {{/each}}
+              </ul>
+
+            <!-- Actions -->
+            <button class="btn add-field btn-link">Add New Answer</button>
+            </div>
+            <button class="btn add-card actions"><i class="icon-plus"></i> Add Card</button>
+          </div>
         </div>
       </div>
     </div>
   </script>
 
+  <!-- EDITOR SIDEBAR -->
+  <script type="text/template" id="editor-sidebar-template">
+      <h4 class="title">Set Default Labels</h4>
+
+      <!-- Default Labels List -->
+      <ul id="default-labels">
+        {{#each labels}}
+          <li>
+            <span class="tag">{{this}}</span>
+            <i class="icon-remove delete" data-label="{{this}}"></i>
+          </li>
+        {{/each}}
+      </ul>
+
+      <!-- Set Default Label -->
+      <div class="input-group">
+        <input type="text" class="default form-control" placeholder="eg. 'Name', 'Date', 'Location' " >
+        <span class="input-group-btn">
+          <button class="btn btn-default add-default" type="button"><i class="icon-plus"></i></button>
+        </span>
+      </div>
+      <hr />
+
+      <!-- Clear Cards -->
+      <button class="btn clear-set">Clear All Cards</button>
+  </script>
+
   <!-- EDITOR > CARD -->
   <script type="text/template" id="card-template">
     <div class="row">
-      <div class="card-wrapper col-md-6 col-md-offset-3">
+      <div class="card-wrapper">
+
+        <!-- Card Front -->
         <div class="query card-side">
-          <div class="actions view-mode">
-            <a class="edit"><i class="icon-pencil"></i></a>
-            <a class="destroy"><i class="icon-remove"></i></a>
-          </div>
           <span>{{query}}</span>
           <textarea class="update edit-mode" name="query">{{query}}</textarea>
-          <div class="edit-mode pull-right">
-            <a class="cancel">Cancel</a>
-            <a class="btn save"><i class="icon-ok"></i> Update Card</a>
-          </div>
         </div>
-        <div class="card-side">
+
+        <div class="card-side bottom">
           <ul class="answers">
-            {{#answers}}
+
+            <!-- Card Answers -->
+            {{#each answers}}
               <li class="answer">
                 <span class="title">{{label}}:</span>
                 <span>{{answer}}</span>
@@ -109,21 +145,25 @@
                 <textarea class="update edit-mode" name="answer" placeholder="Answer">{{answer}}</textarea>
                 <i class="remove-answer icon-remove actions edit-mode"></i>
               </li>
-            {{/answers}}
+            {{/each}}
           </ul>
+
           <button class="btn add-field edit-mode btn-link">Add New Answer</button>
         </div>
+
+        <!-- Actions -->
+        <div class="actions view-mode">
+          <a class="edit"><i class="icon-pencil"></i></a>
+          <a class="destroy"><i class="icon-remove"></i></a>
+        </div>
+
+        <div class="actions edit-mode">
+          <a class="btn save"><i class="icon-ok"></i> Update Card</a>
+          <a class="cancel">Cancel</a>
+        </div>
+
       </div>
     </div>
-  </script>
-
-  <!-- EDITOR > CARD > FIELDS -->
-  <script type="text/template" id="fields-template">
-    <li class="answer">
-      <input class="update" name="label" placeholder="Label" />
-      <textarea class="update" name="answer" placeholder="Answer"></textarea>
-      <i class="remove-answer icon-remove actions"></i>
-    </li>
   </script>
 
 
@@ -152,6 +192,11 @@
     <nav class="center"><button class="next options btn">Next Card</button></nav>
   </script>
 
+  <!-- REVIEW SIDEBAR -->
+  <script type="text/template" id="review-sidebar-template">
+  </script>
+
+
   <!-- REVIEW > CARD -->
   <script type="text/template" id="qa-template">
     <div class="card">
@@ -170,7 +215,7 @@
       </div>
       <div class="back center-wrap">
         <span class="answer center"></span>
-        <button class="btn main">Done</button>
+        <button class="btn done">Done</button>
       </div>
     </div>
   </script>
