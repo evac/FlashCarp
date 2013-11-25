@@ -11,6 +11,7 @@
 			word-break: break-word
 
 .card-wrapper
+	position: relative
 	padding: 0
 	.card-side
 		position: relative
@@ -19,7 +20,7 @@
 		padding: 15px
 		border: 1px solid #CCC
 		+clearfix()
-		&:last-child
+		&.bottom
 			background: #EEE
 			border-top: none
 
@@ -49,6 +50,7 @@
 		.icon-remove
 			top: 0
 			right: 0
+			left: auto
 			bottom: auto
 			font-size: 24px
 	.add-field
@@ -59,8 +61,16 @@
 
 .actions
 	position: absolute
-	top: 10px
-	right: 10px
+	top: 0
+	left: 100%
+	margin-left: 10px
+	&.view-mode
+		top: 10px
+		left: auto
+		right: 10px
+		margin-left: 0
+		font-size: 24px
+
 
 .save, .add-card
 	background: #71B664
@@ -73,7 +83,7 @@
 
 .cancel
 	display: inline-block
-	margin: 0 10px
+	margin: 10px 0 0
 	font-size: 20px
 
 
@@ -107,6 +117,7 @@ textarea[name="query"]
 	.icon-remove
 		top: 0
 		right: 0
+		left: auto
 		font-size: 24px
 		color: #BBB
 		&:hover
