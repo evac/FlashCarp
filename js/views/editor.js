@@ -30,8 +30,9 @@ define(['require', 'router', 'views/card', 'views/sidebar'], function(require, R
 		},
 
 		render: function(){
-			this.defaultLabels = JSON.parse(localStorage.getItem("labels")).map(function(val){return {label: val};});
-			this.answerFields = this.defaultLabels.length ? this.defaultLabels : [{label: ""}];
+			var labels = JSON.parse(localStorage.getItem("labels"));
+
+			this.answerFields = this.defaultLabels = labels && labels.length ? labels.map(function(val){return {label: val};}) : [{label: ""}];
 
 			// render editor view
 			this.$el.html(this.editorTemplate({answers: this.answerFields}));
