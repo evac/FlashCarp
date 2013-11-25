@@ -62,3 +62,10 @@ TODO
 - Add collections for cardsets
 - Add grade report and statistics for correct/incorrect answers
 - Add extra rounds for reviewing incorrect answers
+
+
+Build instructions
+```
+cd build
+node r.js -o build.js
+```
